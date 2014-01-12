@@ -1,4 +1,4 @@
-name: Your New Jekyll Site
+name: decabeza
 markdown: redcarpet
 pygments: true
-permalink: :title
+permalink: :title #use only title for friendly URls
