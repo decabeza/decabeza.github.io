@@ -83,6 +83,8 @@ a {
   color: #57ad68;
   text-decoration: none; }
 
+/* CUERPO REM: Cuerpo del elemento / cuerpo base */
+/* LINE HEIGHT: LINE-HEIGHT / cuerpo del elemento */
 header {
   font-size: 1.28571rem;
   /* $font % 16 */
@@ -154,6 +156,7 @@ h1 {
   margin-top: 24px;
   padding: 0 20px; }
 
+/* POSTS */
 .post_title {
   font-family: 'freight';
   font-size: 3.42857rem;
