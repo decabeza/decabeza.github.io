@@ -21,7 +21,7 @@
 	margin-left: 12px;
 }
 
-.footer {
+.footer {	
   font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
@@ -119,6 +119,11 @@ $lineHeightValue: 24;
     font-weight: $weight;
 }
 
+#home, #blog {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
 header {
 	@include fontSize (18, 1, normal);
 	width: 100%;
@@ -149,20 +154,30 @@ header {
 		color: #666665;
 	}
 
-	nav { 
-		float: right; 
+}
 
-		a {
-			color: #7f8586;
-			padding: 16px 12px;
-			display: inline-block;
+nav { 
+	float: right; 
+	margin-top: $line;
 
-			&:hover { 
-				color: white;
-			}
+	a {
+		color: #91a8ba;
+		padding: 12px;
+		display: inline-block;
+
+		&:hover { 
+			text-decoration: underline;
 		}
-	}
+		
+		&.contact {
+			border: 1px solid #2895f1;
+			border-radius: 20px;
+			webkit-border-radius: 20px;
+			moz-border-radius: 20px;
+			padding: 6px 12px;
+		}
 
+	}
 }
 
 .header-blog {
@@ -186,8 +201,31 @@ header {
     margin: $line;
 }
 
-h1 {
-	color: #4dbac0;
+/*----- BLOG -----*/
+
+#blog {
+
+	header {
+	@include fontSize (18, 1, normal);
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	z-index: 999;
+	text-align: center;
+	color: #333332;
+
+		h1 {
+			@include fontSize (36, 2, normal);
+			font-family: 'montserrat_regular', sans-serif;
+			padding-top: $line*6;	
+			color: #333332;
+
+			span {
+				@include fontSize (24, 2, normal);
+				color: #33536d;
+			}
+		}
+	}
 }
 
 .site {
@@ -248,6 +286,8 @@ footer {
 	text-align: center;
 	padding-top: $line;
 	margin-top: $line*4;
+	position: absolute;
+	bottom: 0;
 
 	a {
 		@include fontSize (24);
@@ -273,7 +313,7 @@ footer {
 	text-decoration: none;
 	vertical-align: top;
 	margin-top: 60px;
-	display: inline-block;
+	display: inline-block;  
 }
 
 

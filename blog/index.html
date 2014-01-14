@@ -1,13 +1,14 @@
 ---
-layout: default
+layout: blog
 title: decabeza
 ---
 
-<div id="home">
-  <!-- <h1>Blog Posts</h1> -->
+<section>
+   
   <ul class="posts">
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}" class="post-title">{{ post.title }}</a> <span>{{ post.date | date_to_string }}</span></li>
+      <li><img src="{{ post.image }}" width="150" height="150" /> <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a> <span>{{ post.fecha }}</span></li>
     {% endfor %}
   </ul>
-</div>
+
+</section>

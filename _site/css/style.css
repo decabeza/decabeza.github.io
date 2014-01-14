@@ -8,7 +8,11 @@
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%; }
+  font-size: 80%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 65px;
+  margin-left: 12px; }
 
 .footer {
   font-size: 80%;
@@ -85,6 +89,10 @@ a {
 
 /* CUERPO REM: Cuerpo del elemento / cuerpo base */
 /* LINE HEIGHT: LINE-HEIGHT / cuerpo del elemento */
+#home, #blog {
+  max-width: 1170px;
+  margin: 0 auto; }
+
 header {
   font-size: 1.28571rem;
   /* $font % 16 */
@@ -122,14 +130,22 @@ header {
     /* (24*$lines) % $font */
     font-weight: normal;
     color: #666665; }
-  header nav {
-    float: right; }
-    header nav a {
-      color: #7f8586;
-      padding: 16px 12px;
-      display: inline-block; }
-      header nav a:hover {
-        color: white; }
+
+nav {
+  float: right;
+  margin-top: 24px; }
+  nav a {
+    color: #91a8ba;
+    padding: 12px;
+    display: inline-block; }
+    nav a:hover {
+      text-decoration: underline; }
+    nav a.contact {
+      border: 1px solid #2895f1;
+      border-radius: 20px;
+      webkit-border-radius: 20px;
+      moz-border-radius: 20px;
+      padding: 6px 12px; }
 
 .header-blog {
   height: auto; }
@@ -145,8 +161,35 @@ header {
   width: 30px;
   margin: 24px; }
 
-h1 {
-  color: #4dbac0; }
+/*----- BLOG -----*/
+#blog header {
+  font-size: 1.28571rem;
+  /* $font % 16 */
+  line-height: 1.33333;
+  /* (24*$lines) % $font */
+  font-weight: normal;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  z-index: 999;
+  text-align: center;
+  color: #333332; }
+  #blog header h1 {
+    font-size: 2.57143rem;
+    /* $font % 16 */
+    line-height: 1.33333;
+    /* (24*$lines) % $font */
+    font-weight: normal;
+    font-family: 'montserrat_regular', sans-serif;
+    padding-top: 144px;
+    color: #333332; }
+    #blog header h1 span {
+      font-size: 1.71429rem;
+      /* $font % 16 */
+      line-height: 2;
+      /* (24*$lines) % $font */
+      font-weight: normal;
+      color: #33536d; }
 
 .site {
   text-align: justify;
@@ -210,7 +253,9 @@ footer {
   width: 100%;
   text-align: center;
   padding-top: 24px;
-  margin-top: 96px; }
+  margin-top: 96px;
+  position: absolute;
+  bottom: 0; }
   footer a {
     font-size: 1.71429rem;
     /* $font % 16 */
@@ -238,7 +283,10 @@ footer {
   font-weight: normal;
   font-family: 'montserrat_bold', sans-serif;
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 60px;
+  display: inline-block; }
 
 /* Sidebar menu */
 .sidr {
