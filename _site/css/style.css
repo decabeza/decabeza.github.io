@@ -8,7 +8,11 @@
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%; }
+  font-size: 80%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 65px;
+  margin-left: 12px; }
 
 .footer {
   font-size: 80%;
@@ -238,7 +242,10 @@ footer {
   font-weight: normal;
   font-family: 'montserrat_bold', sans-serif;
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  vertical-align: top;
+  margin-top: 60px;
+  display: inline-block; }
 
 /* Sidebar menu */
 .sidr {

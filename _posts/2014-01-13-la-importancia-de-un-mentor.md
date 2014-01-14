@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "La importancia de un mentor"
-fecha:   13 de enero 2014
+fecha:   15 de enero 2014
 categories: jekyll update
 image: /images/yoda.png
 ---
