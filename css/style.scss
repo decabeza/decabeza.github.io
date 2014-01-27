@@ -280,12 +280,17 @@ nav {
 }
 
 footer {
-	background: #f0f2f5;
+   	font-size: 14px;
+  	padding-top: 65px;
+	padding-bottom: 65px;
+	background: #2c3e50;
+	color: #bdc3c7;
+	// background: #f0f2f5;
 	border-top: 1px solid #e7e9eb; 
 	width: 100%;
 	text-align: center;
-	padding-top: $line;
-	margin-top: $line*4;
+	// padding-top: $line;
+	// margin-top: $line*4;
 	position: absolute;
 	bottom: 0;
 
