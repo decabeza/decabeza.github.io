@@ -2,6 +2,21 @@
 
 ---
 
+$line: 24px; 
+$fontSizeValue: 14;
+$lineHeightValue: 24;
+
+/* CUERPO REM: Cuerpo del elemento / cuerpo base */
+/* LINE HEIGHT: LINE-HEIGHT / cuerpo del elemento */
+
+@mixin fontSize ($font: 16, $lines: 1, $weight: normal) {
+    font-size: ($font/$fontSizeValue)+rem; /* $font % 16 */
+    line-height: (($lineHeightValue*$lines)/$font); /* (24*$lines) % $font */
+    font-weight: $weight;
+}
+
+
+
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
@@ -82,9 +97,12 @@
 
 body {
 	background: white;
-  	font-family: 'open_sans','Helvetica Neue',Helvetica, Arial, sans-serif;
+  	font-family: 'Open Sans','Raleway','Helvetica Neue',Helvetica, Arial, sans-serif;
   	font-size: 14px;
   	line-height: 24px;  	
+  	position: relative;
+  	text-rendering: optimizeLegibility;
+  	font-weight: normal;
 }
 
 * {
@@ -95,6 +113,9 @@ html, body {
 	height: 100%;
 }
 .wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 	margin: 0 auto -72px; /* the bottom margin is the negative value of the footer's height */
 }
 footer, .push {
@@ -106,32 +127,50 @@ a {
 	text-decoration: none;
 }
 
-$line: 24px; 
-$fontSizeValue: 14;
-$lineHeightValue: 24;
 
-/* CUERPO REM: Cuerpo del elemento / cuerpo base */
-/* LINE HEIGHT: LINE-HEIGHT / cuerpo del elemento */
 
-@mixin fontSize ($font: 16, $lines: 1, $weight: normal) {
-    font-size: ($font/$fontSizeValue)+rem; /* $font % 16 */
-    line-height: (($lineHeightValue*$lines)/$font); /* (24*$lines) % $font */
-    font-weight: $weight;
+.home-background {
+	margin: 0 auto;
+	background: url('../images/bg_home.jpg') 0% 60% no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 1px solid #ddd;	
+}
+
+.blog-background {
+	margin: 0 auto;
+	background: url('../images/bg_blog.jpg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	border-bottom: 1px solid #ddd;	
 }
 
 #home, #blog {
 	max-width: 1170px;
-	margin: 0 auto;
+	margin: 0 auto;	
+}
+
+#home {
+
+	p {
+		@include fontSize (16,1,normal);
+		color: #8C989B;
+  	}
 }
 
 header {
 	@include fontSize (18, 1, normal);
 	width: 100%;
-	height: 450px;
+	height: $line*10;
 	margin: 0 auto;
 	z-index: 999;
 	text-align: center;
-	color: #333332;
+	color: white;
+	padding-top: $line*6;
 
 	a {
 		color: white;
@@ -139,22 +178,23 @@ header {
 	}
 
 	h1 { 	
-		@include fontSize (60, 3, normal);
-		font-family: 'montserrat_regular', sans-serif;
-		padding-top: $line*6;	
-		color: #333332;
+		@include fontSize (60, 3, 800);					
 	}
 
 	h2 {
-		@include fontSize (30, 2, normal);
+		@include fontSize (30, 2, 700);
+
+			span {
+				font-weight: 500;
+			}
 	}
 
 	h3 {
-		@include fontSize (24, 1, normal);
-		color: #666665;
+		@include fontSize (24, 1, 300);		
 	}
 
 }
+
 
 nav { 
 	float: right; 
@@ -203,31 +243,6 @@ nav {
 
 /*----- BLOG -----*/
 
-#blog {
-
-	header {
-	@include fontSize (18, 1, normal);
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	z-index: 999;
-	text-align: center;
-	color: #333332;
-
-		h1 {
-			@include fontSize (36, 2, normal);
-			font-family: 'montserrat_regular', sans-serif;
-			padding-top: $line*6;	
-			color: #333332;
-
-			span {
-				@include fontSize (24, 2, normal);
-				color: #33536d;
-			}
-		}
-	}
-}
-
 .site {
 	text-align: justify;
 	max-width: 1000px;
@@ -258,7 +273,6 @@ nav {
 }
 
 .post_text {
-	
 	@include fontSize (14, 1, normal);
 	color: #333332;
 	
@@ -279,26 +293,40 @@ nav {
 	}
 }
 
+
+
+
+
 footer {
    	font-size: 14px;
-  	padding-top: 65px;
-	padding-bottom: 65px;
-	background: #2c3e50;
+   	height: $line*3;
+  	padding: 24px 0;	
+	background: #ebedee;
 	color: #bdc3c7;
-	// background: #f0f2f5;
 	border-top: 1px solid #e7e9eb; 
 	width: 100%;
-	text-align: center;
-	// padding-top: $line;
-	// margin-top: $line*4;
-	position: absolute;
-	bottom: 0;
+	text-align: center;	
 
 	a {
 		@include fontSize (24);
 		color: #515864;
 		text-decoration: none;
 		margin-right: $line;
+		
+		&.twitter:hover {
+				color: #2290bf;
+		}
+
+		&.dribbble:hover {
+				color: #ea4c89;
+		}
+
+		&.github:hover {
+				color: #333333;
+		}
+
+		
+		
 	}
 
 }
@@ -431,42 +459,6 @@ footer {
 
 /* FontFaces */
 
-@font-face {
-    font-family: 'open_sans';
-    src: url('../fonts/OpenSans-Regular-webfont.eot');
-    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'open_sans';
-    src: url('../fonts/OpenSans-Bold-webfont.eot');
-    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'montserrat_bold';
-    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'montserrat_regular';
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'freight';
@@ -474,6 +466,96 @@ footer {
     font-weight: normal;
     font-style: normal;
 }
+
+
+.clear {
+	clear: both;
+} 
+
+.home-grey {
+	background: #f1f1f1;
+}
+
+#shotsByPlayerId {
+
+	li {
+		list-style-type: none;
+		float: left;
+		margin: $line*2;
+		max-width: 500px;
+	}
+		
+		h4 {
+			@include fontSize (14,1,400);
+			color: #384047;
+		}
+		
+		a {}
+
+		img {
+			max-width: 400px;
+			width: 100%;
+			border: 1px solid #d4d4d4;
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			-moz-border-radius:10px;
+		}
+
+}
+
+
+@media (max-width: 480px) {
+
+	#shotsByPlayerId {
+
+		li {		
+			float: left;
+			margin: $line*2;
+		}
+	}
+
+	header {
+	@include fontSize (16, 1, normal);	
+
+	h1 { 	
+		@include fontSize (48, 3, 800);					
+
+		&.blog-title {
+			@include fontSize (30, 2, 800);								
+		}
+	}
+
+	h2 {
+		@include fontSize (22, 2, 700);
+
+			span {
+				font-weight: 500;
+			}
+	}
+
+	h3 {
+		@include fontSize (16, 1, 300);		
+	}
+
+}
+	
+}
+
+@media (max-width: 1000px) {
+
+	#shotsByPlayerId {
+
+		li {		
+			float: none;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: $line;
+		}
+	}
+	
+}
+
+
 
 
 

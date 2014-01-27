@@ -2,5 +2,5 @@ name: decabeza
 markdown: redcarpet
 pygments: true
 permalink: :title #use only title for friendly URls
-baseurl: http://localhost:4000
-#baseurl: http://decabeza.github.io
+#baseurl: http://localhost:4000
+baseurl: http://decabeza.github.io

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: home-blog
 title: decabeza
 ---
 
@@ -7,7 +7,7 @@ title: decabeza
    
   <ul class="posts">
     {% for post in site.posts %}
-      <li><img src="{{ post.image }}" width="150" height="150" /> <a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a> <span>{{ post.fecha }}</span></li>
+      <li><a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a> <span>{{ post.fecha }}</span></li>
     {% endfor %}
   </ul>
 
