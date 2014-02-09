@@ -227,4 +227,9 @@ ol {
     padding-left: 10px;
     padding-top: 50px;
   }
+
+  /* line 226, /Users/decabeza/Source/decabeza/css/style.scss */
+  .post-text ol, .post-text ul {
+    margin-left: 20px;
+  }
 }
