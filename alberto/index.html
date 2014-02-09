@@ -1,0 +1,14 @@
+---
+layout: default
+title: decabeza
+---
+
+<section style="height: 400px;">
+   HOLA!!!
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}" class="post-title" title="{{ post.title }}">{{ post.title }}</a> <span>{{ post.fecha }}</span></li>
+    {% endfor %}
+  </ul>
+
+</section>
