@@ -1,0 +1,215 @@
+/* line 3, /Users/decabeza/Source/decabeza/css/style.scss */
+.tell-me-more {
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* line 8, /Users/decabeza/Source/decabeza/css/style.scss */
+#my-work {
+  padding-bottom: 0;
+}
+
+/* line 12, /Users/decabeza/Source/decabeza/css/style.scss */
+.my-work-apps {
+  margin-top: 20px;
+}
+/* line 15, /Users/decabeza/Source/decabeza/css/style.scss */
+.my-work-apps img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 21, /Users/decabeza/Source/decabeza/css/style.scss */
+.link-dribbble {
+  color: #ea4c89;
+  text-decoration: none;
+}
+
+/* line 26, /Users/decabeza/Source/decabeza/css/style.scss */
+.copyright {
+  vertical-align: top;
+  line-height: 60px;
+}
+
+/* line 31, /Users/decabeza/Source/decabeza/css/style.scss */
+.avialable {
+  color: #63c6ae;
+  font-weight: bold;
+}
+
+/* line 36, /Users/decabeza/Source/decabeza/css/style.scss */
+.post-text {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.71429;
+  font-weight: normal;
+  color: #333332;
+}
+/* line 45, /Users/decabeza/Source/decabeza/css/style.scss */
+.post-text p {
+  padding-bottom: 24px;
+}
+/* line 49, /Users/decabeza/Source/decabeza/css/style.scss */
+.post-text ol, .post-text ul {
+  padding-bottom: 24px;
+  margin-left: 1.35em;
+}
+/* line 53, /Users/decabeza/Source/decabeza/css/style.scss */
+.post-text ol li, .post-text ul li {
+  padding: 12px;
+}
+/* line 58, /Users/decabeza/Source/decabeza/css/style.scss */
+.post-text a {
+  color: #57ad68;
+}
+
+/* line 63, /Users/decabeza/Source/decabeza/css/style.scss */
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin: 1em 0;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+/* line 74, /Users/decabeza/Source/decabeza/css/style.scss */
+.post_quote {
+  font-family: 'freight';
+  font-size: 1.71429rem;
+  line-height: 1;
+  font-weight: normal;
+  color: #000;
+}
+
+/* line 82, /Users/decabeza/Source/decabeza/css/style.scss */
+.blog-title {
+  max-width: 1000px;
+  padding-top: 150px;
+  margin: 0 auto;
+  color: white !important;
+}
+/* line 88, /Users/decabeza/Source/decabeza/css/style.scss */
+.blog-title h1 {
+  font-size: 48px;
+  color: white;
+  padding-bottom: 6px;
+}
+/* line 94, /Users/decabeza/Source/decabeza/css/style.scss */
+.blog-title h2, .blog-title h3 {
+  padding: 4px 0;
+  color: white;
+}
+
+/* line 100, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-blog {
+  padding: 50px 0;
+}
+
+/* line 104, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact {
+  padding: 120px 0 40px;
+  background-color: #f7f5f2;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 110, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact h2 {
+  color: #626263;
+  padding-bottom: 20px;
+}
+/* line 115, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact input[type=text], .wrap-contact input[type=email] {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* line 124, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact textarea {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: lighter;
+}
+/* line 132, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact input[type=submit] {
+  width: 105%;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #63c6ae;
+  padding: 16px 24px 17px 24px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-shadow: none;
+  margin: 0 auto;
+  text-align: center;
+  border: 0 none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -2px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 164, /Users/decabeza/Source/decabeza/css/style.scss */
+.wrap-contact input[type=submit]:hover {
+  background: #50bfa4;
+}
+
+@media (max-width: 480px) {
+  /* line 173, /Users/decabeza/Source/decabeza/css/style.scss */
+  .wrap-contact {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 320px) {
+  /* line 181, /Users/decabeza/Source/decabeza/css/style.scss */
+  .contact-form {
+    padding: 0;
+    margin: 0;
+  }
+}
+/* line 188, /Users/decabeza/Source/decabeza/css/style.scss */
+.contact-form {
+  background: white;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 30px 40px 30px 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* FontFaces */
+@font-face {
+  font-family: 'freight';
+  src: url("../fonts/Freight_book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
