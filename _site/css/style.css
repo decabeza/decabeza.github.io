@@ -228,8 +228,8 @@ ol {
     padding-top: 50px;
   }
 
-  /* line 226, /Users/decabeza/Source/decabeza/css/style.scss */
-  .post-text ol, .post-text ul {
+  /* line 224, /Users/decabeza/Source/decabeza/css/style.scss */
+  ol {
     margin: 0px !important;
   }
 }
