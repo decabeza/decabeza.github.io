@@ -12027,18 +12027,3 @@ ul.dropdown-menu li>a:hover,ul.dropdown-menu li>a:focus {
     background-image: -o-linear-gradient(top, #63c6ae 0%, #63c6ae 100%);
     background-image: linear-gradient(top, #63c6ae 0%,#63c6ae 100%);
 }
-
-@media (max-width: 320px) {
-    
-    .navbar-fixed-top {
-        max-width: 340px;
-    }
-
-    .blog-title {
-        text-align: center;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top: 50px !important;
-    }
-
-}
