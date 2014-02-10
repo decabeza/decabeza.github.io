@@ -213,3 +213,23 @@ ol {
   font-weight: normal;
   font-style: normal;
 }
+
+@media (max-width: 320px) {
+  /* line 213, /Users/decabeza/Source/decabeza/css/style.scss */
+  .navbar-fixed-top {
+    max-width: 320px;
+  }
+
+  /* line 217, /Users/decabeza/Source/decabeza/css/style.scss */
+  .blog-title {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 50px;
+  }
+
+  /* line 224, /Users/decabeza/Source/decabeza/css/style.scss */
+  ol {
+    margin: 0px !important;
+  }
+}
