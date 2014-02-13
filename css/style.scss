@@ -29,8 +29,12 @@
 }
 
 .avialable {
-	color: #63c6ae;
+	background: #63c6ae;
 	font-weight: bold;
+	display: inline-block;
+	padding: 15px;
+	color: white;
+	margin-bottom: 20px;
 }
 
 .post-text {

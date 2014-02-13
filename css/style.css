@@ -33,8 +33,12 @@
 
 /* line 31, /Users/decabeza/Source/decabeza/css/style.scss */
 .avialable {
-  color: #63c6ae;
+  background: #63c6ae;
   font-weight: bold;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 /* line 36, /Users/decabeza/Source/decabeza/css/style.scss */
