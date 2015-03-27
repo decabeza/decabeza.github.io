@@ -9296,27 +9296,28 @@ h1 {
 /* line 86, ../scss/_decabeza.scss */
 header {
   background: url(../images/bg-header.jpg) no-repeat;
+  background-position: center;
   color: white;
   min-height: 260px;
   padding-bottom: 26px;
 }
-/* line 92, ../scss/_decabeza.scss */
+/* line 93, ../scss/_decabeza.scss */
 header a {
   color: white;
   font-size: 1.29rem;
   line-height: 26px;
   transition: color 0.5s;
 }
-/* line 98, ../scss/_decabeza.scss */
+/* line 99, ../scss/_decabeza.scss */
 header a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 102, ../scss/_decabeza.scss */
+/* line 103, ../scss/_decabeza.scss */
 header a:focus, header a:active {
   color: white;
   transition: color 0.5s;
 }
-/* line 108, ../scss/_decabeza.scss */
+/* line 109, ../scss/_decabeza.scss */
 header p {
   background: black;
   display: inline;
@@ -9324,7 +9325,7 @@ header p {
   line-height: 32px;
   padding: 3px 13px;
 }
-/* line 115, ../scss/_decabeza.scss */
+/* line 116, ../scss/_decabeza.scss */
 header p.available {
   background: #8aba56;
   color: white;
@@ -9332,17 +9333,17 @@ header p.available {
   padding: 3px 13px;
 }
 
-/* line 126, ../scss/_decabeza.scss */
+/* line 127, ../scss/_decabeza.scss */
 #designer, #developer, #contact {
   padding: 78px 0;
 }
-/* line 129, ../scss/_decabeza.scss */
+/* line 130, ../scss/_decabeza.scss */
 #designer h2, #developer h2, #contact h2 {
   font-size: 2.14rem;
   line-height: 52px;
   font-weight: 300;
 }
-/* line 135, ../scss/_decabeza.scss */
+/* line 136, ../scss/_decabeza.scss */
 #designer .button-dribbble, #developer .button-dribbble, #contact .button-dribbble, #contact .button-contact {
   border: 2px solid #ea4c89;
   border-radius: 3px;
@@ -9354,14 +9355,14 @@ header p.available {
   text-transform: uppercase;
 }
 
-/* line 151, ../scss/_decabeza.scss */
+/* line 152, ../scss/_decabeza.scss */
 #developer {
   background: #fafafa;
   border-bottom: 1px solid #edeff0;
   border-top: 1px solid #edeff0;
 }
 
-/* line 163, ../scss/_decabeza.scss */
+/* line 164, ../scss/_decabeza.scss */
 #contact .button-contact {
   border: 2px solid #8aba56;
   color: #8aba56;
