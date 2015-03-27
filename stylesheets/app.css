@@ -9349,18 +9349,19 @@ header p.available {
   color: #ea4c89;
   display: inline-block;
   margin-top: 26px;
+  min-width: 260px;
   padding: 13px 26px;
   text-transform: uppercase;
 }
 
-/* line 150, ../scss/_decabeza.scss */
+/* line 151, ../scss/_decabeza.scss */
 #developer {
   background: #fafafa;
   border-bottom: 1px solid #edeff0;
   border-top: 1px solid #edeff0;
 }
 
-/* line 162, ../scss/_decabeza.scss */
+/* line 163, ../scss/_decabeza.scss */
 #contact .button-contact {
   border: 2px solid #8aba56;
   color: #8aba56;
