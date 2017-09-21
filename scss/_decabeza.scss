@@ -3,7 +3,7 @@
 .row-full {
 	@extend .row;
 	max-width: 100%;
-} 
+}
 
 body, p {
 	font-family: 'open sans', 'Helvetica Neue', Sans-serif;
@@ -19,7 +19,7 @@ body, p {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'open sans', 'Helvetica Neue', Sans-serif;
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
@@ -34,7 +34,7 @@ h1 {
 @media screen and (min-width: 481px)  {
     h1 {
         font-size: 4.29rem; // 60 % 14
-    }     
+    }
 }
 
 // Navigation
@@ -53,13 +53,13 @@ h1 {
 	color: white;
 	display: inline;
 	text-decoration: underline;
-	padding: 0 6.5px;	
+	padding: 0 6.5px;
 
 	&.active {
 		color: white;
 		text-decoration: none;
 	}
-	
+
 	&:hover, &:focus, &:active, &:visited, {
 		background-color: none;
 		background: none;
@@ -75,8 +75,8 @@ h1 {
 
 .top-bar-section ul {
 	text-align: center;
-	
-	li { 
+
+	li {
 		background: none;
 		// line-height: 78px;
 
@@ -99,7 +99,7 @@ header {
     a {
         color: white;
         font-size: 1.29rem; // 18 % 14
-        line-height: 26px; 
+        line-height: 26px;
         transition: color 0.5s;
 
         &:hover {
@@ -130,7 +130,7 @@ header {
     @media screen and (min-width: 481px)  {
         p {
             font-size: 1.14rem ; // 16 % 14
-        }     
+        }
     }
 }
 
@@ -138,7 +138,7 @@ header {
 
 #designer {
 	padding: 78px 0;
-	
+
 	h2 {
 		font-size: 2.14rem; // 30 % 14
 		line-height: 52px; // 52 % 30
@@ -156,7 +156,7 @@ header {
         text-transform: uppercase;
     }
 
-    
+
 }
 
 // Developer
