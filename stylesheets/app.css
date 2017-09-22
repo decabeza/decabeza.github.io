@@ -176,7 +176,7 @@ select {
 }
 
 /* line 232, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-.row, .row-full {
+.row {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -185,28 +185,27 @@ select {
   max-width: 62.5rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row:before, .row-full:before, .row:after, .row-full:after {
+.row:before, .row:after {
   content: " ";
   display: table;
 }
 /* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row:after, .row-full:after {
+.row:after {
   clear: both;
 }
 /* line 236, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-.row.collapse > .column, .collapse.row-full > .column,
-.row.collapse > .columns,
-.collapse.row-full > .columns {
+.row.collapse > .column,
+.row.collapse > .columns {
   padding-left: 0;
   padding-right: 0;
 }
 /* line 239, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-.row.collapse .row, .collapse.row-full .row, .row.collapse .row-full, .collapse.row-full .row-full {
+.row.collapse .row {
   margin-left: 0;
   margin-right: 0;
 }
 /* line 242, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-.row .row, .row-full .row, .row .row-full, .row-full .row-full {
+.row .row {
   width: auto;
   margin-left: -0.9375rem;
   margin-right: -0.9375rem;
@@ -215,27 +214,27 @@ select {
   max-width: none;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row .row:before, .row-full .row:before, .row .row-full:before, .row-full .row-full:before, .row .row:after, .row-full .row:after, .row .row-full:after, .row-full .row-full:after {
+.row .row:before, .row .row:after {
   content: " ";
   display: table;
 }
 /* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row .row:after, .row-full .row:after, .row .row-full:after, .row-full .row-full:after {
+.row .row:after {
   clear: both;
 }
 /* line 243, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-.row .row.collapse, .row-full .row.collapse, .row .collapse.row-full, .row-full .collapse.row-full {
+.row .row.collapse {
   width: auto;
   margin: 0;
   max-width: none;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row .row.collapse:before, .row-full .row.collapse:before, .row .collapse.row-full:before, .row-full .collapse.row-full:before, .row .row.collapse:after, .row-full .row.collapse:after, .row .collapse.row-full:after, .row-full .collapse.row-full:after {
+.row .row.collapse:before, .row .row.collapse:after {
   content: " ";
   display: table;
 }
 /* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.row .row.collapse:after, .row-full .row.collapse:after, .row .collapse.row-full:after, .row-full .collapse.row-full:after {
+.row .row.collapse:after {
   clear: both;
 }
 
@@ -600,21 +599,19 @@ select {
   }
 
   /* line 216, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.small-collapse > .column, .small-collapse.row-full > .column,
-  .row.small-collapse > .columns,
-  .small-collapse.row-full > .columns {
+  .row.small-collapse > .column,
+  .row.small-collapse > .columns {
     padding-left: 0;
     padding-right: 0;
   }
   /* line 219, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.small-collapse .row, .small-collapse.row-full .row, .row.small-collapse .row-full, .small-collapse.row-full .row-full {
+  .row.small-collapse .row {
     margin-left: 0;
     margin-right: 0;
   }
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.small-uncollapse > .column, .small-uncollapse.row-full > .column,
-  .row.small-uncollapse > .columns,
-  .small-uncollapse.row-full > .columns {
+  .row.small-uncollapse > .column,
+  .row.small-uncollapse > .columns {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left;
@@ -962,21 +959,19 @@ select {
   }
 
   /* line 216, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.medium-collapse > .column, .medium-collapse.row-full > .column,
-  .row.medium-collapse > .columns,
-  .medium-collapse.row-full > .columns {
+  .row.medium-collapse > .column,
+  .row.medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0;
   }
   /* line 219, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.medium-collapse .row, .medium-collapse.row-full .row, .row.medium-collapse .row-full, .medium-collapse.row-full .row-full {
+  .row.medium-collapse .row {
     margin-left: 0;
     margin-right: 0;
   }
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.medium-uncollapse > .column, .medium-uncollapse.row-full > .column,
-  .row.medium-uncollapse > .columns,
-  .medium-uncollapse.row-full > .columns {
+  .row.medium-uncollapse > .column,
+  .row.medium-uncollapse > .columns {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left;
@@ -1492,21 +1487,19 @@ select {
   }
 
   /* line 216, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.large-collapse > .column, .large-collapse.row-full > .column,
-  .row.large-collapse > .columns,
-  .large-collapse.row-full > .columns {
+  .row.large-collapse > .column,
+  .row.large-collapse > .columns {
     padding-left: 0;
     padding-right: 0;
   }
   /* line 219, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.large-collapse .row, .large-collapse.row-full .row, .row.large-collapse .row-full, .large-collapse.row-full .row-full {
+  .row.large-collapse .row {
     margin-left: 0;
     margin-right: 0;
   }
   /* line 222, ../bower_components/foundation/scss/foundation/components/_grid.scss */
-  .row.large-uncollapse > .column, .large-uncollapse.row-full > .column,
-  .row.large-uncollapse > .columns,
-  .large-uncollapse.row-full > .columns {
+  .row.large-uncollapse > .column,
+  .row.large-uncollapse > .columns {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     float: left;
@@ -3960,44 +3953,35 @@ form {
 
 /* Using forms within rows, we need to set some defaults */
 /* line 87, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row, form .row-full .row, form .row .row-full, form .row-full .row-full {
+form .row .row {
   margin: 0 -0.5rem;
 }
 /* line 89, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row .column, form .row-full .row .column, form .row .row-full .column, form .row-full .row-full .column,
-form .row .row .columns,
-form .row-full .row .columns,
-form .row .row-full .columns,
-form .row-full .row-full .columns {
+form .row .row .column,
+form .row .row .columns {
   padding: 0 0.5rem;
 }
 /* line 93, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse, form .row-full .row.collapse, form .row .collapse.row-full, form .row-full .collapse.row-full {
+form .row .row.collapse {
   margin: 0;
 }
 /* line 95, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse .column, form .row-full .row.collapse .column, form .row .collapse.row-full .column, form .row-full .collapse.row-full .column,
-form .row .row.collapse .columns,
-form .row-full .row.collapse .columns,
-form .row .collapse.row-full .columns,
-form .row-full .collapse.row-full .columns {
+form .row .row.collapse .column,
+form .row .row.collapse .columns {
   padding: 0;
 }
 /* line 97, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .row.collapse input, form .row-full .row.collapse input, form .row .collapse.row-full input, form .row-full .collapse.row-full input {
+form .row .row.collapse input {
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 /* line 103, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row input.column, form .row-full input.column,
+form .row input.column,
 form .row input.columns,
-form .row-full input.columns,
 form .row textarea.column,
-form .row-full textarea.column,
-form .row textarea.columns,
-form .row-full textarea.columns {
+form .row textarea.columns {
   padding-left: 0.5rem;
 }
 
@@ -4167,19 +4151,10 @@ input[type="text"].radius, input[type="password"].radius, input[type="date"].rad
 }
 
 /* line 428, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .prefix-radius.row.collapse input, form .row-full .prefix-radius.row.collapse input, form .row .prefix-radius.collapse.row-full input, form .row-full .prefix-radius.collapse.row-full input,
+form .row .prefix-radius.row.collapse input,
 form .row .prefix-radius.row.collapse textarea,
-form .row-full .prefix-radius.row.collapse textarea,
-form .row .prefix-radius.collapse.row-full textarea,
-form .row-full .prefix-radius.collapse.row-full textarea,
 form .row .prefix-radius.row.collapse select,
-form .row-full .prefix-radius.row.collapse select,
-form .row .prefix-radius.collapse.row-full select,
-form .row-full .prefix-radius.collapse.row-full select,
-form .row .prefix-radius.row.collapse button,
-form .row-full .prefix-radius.row.collapse button,
-form .row .prefix-radius.collapse.row-full button,
-form .row-full .prefix-radius.collapse.row-full button {
+form .row .prefix-radius.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -4187,7 +4162,7 @@ form .row-full .prefix-radius.collapse.row-full button {
   border-top-right-radius: 3px;
 }
 /* line 432, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .prefix-radius.row.collapse .prefix, form .row-full .prefix-radius.row.collapse .prefix, form .row .prefix-radius.collapse.row-full .prefix, form .row-full .prefix-radius.collapse.row-full .prefix {
+form .row .prefix-radius.row.collapse .prefix {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -4195,19 +4170,10 @@ form .row .prefix-radius.row.collapse .prefix, form .row-full .prefix-radius.row
   border-top-left-radius: 3px;
 }
 /* line 435, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .postfix-radius.row.collapse input, form .row-full .postfix-radius.row.collapse input, form .row .postfix-radius.collapse.row-full input, form .row-full .postfix-radius.collapse.row-full input,
+form .row .postfix-radius.row.collapse input,
 form .row .postfix-radius.row.collapse textarea,
-form .row-full .postfix-radius.row.collapse textarea,
-form .row .postfix-radius.collapse.row-full textarea,
-form .row-full .postfix-radius.collapse.row-full textarea,
 form .row .postfix-radius.row.collapse select,
-form .row-full .postfix-radius.row.collapse select,
-form .row .postfix-radius.collapse.row-full select,
-form .row-full .postfix-radius.collapse.row-full select,
-form .row .postfix-radius.row.collapse button,
-form .row-full .postfix-radius.row.collapse button,
-form .row .postfix-radius.collapse.row-full button,
-form .row-full .postfix-radius.collapse.row-full button {
+form .row .postfix-radius.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -4215,7 +4181,7 @@ form .row-full .postfix-radius.collapse.row-full button {
   border-top-left-radius: 3px;
 }
 /* line 439, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .postfix-radius.row.collapse .postfix, form .row-full .postfix-radius.row.collapse .postfix, form .row .postfix-radius.collapse.row-full .postfix, form .row-full .postfix-radius.collapse.row-full .postfix {
+form .row .postfix-radius.row.collapse .postfix {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -4223,19 +4189,10 @@ form .row .postfix-radius.row.collapse .postfix, form .row-full .postfix-radius.
   border-top-right-radius: 3px;
 }
 /* line 442, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .prefix-round.row.collapse input, form .row-full .prefix-round.row.collapse input, form .row .prefix-round.collapse.row-full input, form .row-full .prefix-round.collapse.row-full input,
+form .row .prefix-round.row.collapse input,
 form .row .prefix-round.row.collapse textarea,
-form .row-full .prefix-round.row.collapse textarea,
-form .row .prefix-round.collapse.row-full textarea,
-form .row-full .prefix-round.collapse.row-full textarea,
 form .row .prefix-round.row.collapse select,
-form .row-full .prefix-round.row.collapse select,
-form .row .prefix-round.collapse.row-full select,
-form .row-full .prefix-round.collapse.row-full select,
-form .row .prefix-round.row.collapse button,
-form .row-full .prefix-round.row.collapse button,
-form .row .prefix-round.collapse.row-full button,
-form .row-full .prefix-round.collapse.row-full button {
+form .row .prefix-round.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -4243,7 +4200,7 @@ form .row-full .prefix-round.collapse.row-full button {
   border-top-right-radius: 1000px;
 }
 /* line 446, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .prefix-round.row.collapse .prefix, form .row-full .prefix-round.row.collapse .prefix, form .row .prefix-round.collapse.row-full .prefix, form .row-full .prefix-round.collapse.row-full .prefix {
+form .row .prefix-round.row.collapse .prefix {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 1000px;
   -webkit-border-top-left-radius: 1000px;
@@ -4251,19 +4208,10 @@ form .row .prefix-round.row.collapse .prefix, form .row-full .prefix-round.row.c
   border-top-left-radius: 1000px;
 }
 /* line 449, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .postfix-round.row.collapse input, form .row-full .postfix-round.row.collapse input, form .row .postfix-round.collapse.row-full input, form .row-full .postfix-round.collapse.row-full input,
+form .row .postfix-round.row.collapse input,
 form .row .postfix-round.row.collapse textarea,
-form .row-full .postfix-round.row.collapse textarea,
-form .row .postfix-round.collapse.row-full textarea,
-form .row-full .postfix-round.collapse.row-full textarea,
 form .row .postfix-round.row.collapse select,
-form .row-full .postfix-round.row.collapse select,
-form .row .postfix-round.collapse.row-full select,
-form .row-full .postfix-round.collapse.row-full select,
-form .row .postfix-round.row.collapse button,
-form .row-full .postfix-round.row.collapse button,
-form .row .postfix-round.collapse.row-full button,
-form .row-full .postfix-round.collapse.row-full button {
+form .row .postfix-round.row.collapse button {
   border-radius: 0;
   -webkit-border-bottom-left-radius: 1000px;
   -webkit-border-top-left-radius: 1000px;
@@ -4271,7 +4219,7 @@ form .row-full .postfix-round.collapse.row-full button {
   border-top-left-radius: 1000px;
 }
 /* line 453, ../bower_components/foundation/scss/foundation/components/_forms.scss */
-form .row .postfix-round.row.collapse .postfix, form .row-full .postfix-round.row.collapse .postfix, form .row .postfix-round.collapse.row-full .postfix, form .row-full .postfix-round.collapse.row-full .postfix {
+form .row .postfix-round.row.collapse .postfix {
   border-radius: 0;
   -webkit-border-bottom-right-radius: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -6717,7 +6665,7 @@ meta.foundation-mq-topbar {
   list-style: none;
 }
 /* line 167, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .row, .top-bar .row-full {
+.top-bar .row {
   max-width: none;
 }
 /* line 169, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -9209,245 +9157,81 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 3, ../scss/_decabeza.scss */
-.row-full {
-  max-width: 100%;
+/* line 4, ../scss/_decabeza.scss */
+html, body {
+  height: auto;
 }
 
 /* line 8, ../scss/_decabeza.scss */
-body, p {
-  font-family: 'open sans', 'Helvetica Neue', Sans-serif;
-  font-size: 14px;
+body {
+  color: #555;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
   line-height: 26px;
 }
-/* line 14, ../scss/_decabeza.scss */
-body p, p p {
-  margin-bottom: 26px;
-}
 
-/* line 19, ../scss/_decabeza.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'open sans', 'Helvetica Neue', Sans-serif;
+/* line 15, ../scss/_decabeza.scss */
+h1, h2 {
+  color: #000;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
+}
+
+/* line 22, ../scss/_decabeza.scss */
+h1 {
+  color: #373737;
+  font-weight: 400;
 }
 
 /* line 27, ../scss/_decabeza.scss */
-h1 {
-  color: white;
+h2 {
   font-weight: 800;
-  font-size: 3.43rem;
-  line-height: 78px;
+  margin-bottom: 9px;
 }
 
+/* line 32, ../scss/_decabeza.scss */
+p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* line 37, ../scss/_decabeza.scss */
+a {
+  border-bottom: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 43, ../scss/_decabeza.scss */
+header {
+  margin: 32.04px auto;
+}
 @media screen and (min-width: 481px) {
-  /* line 35, ../scss/_decabeza.scss */
-  h1 {
-    font-size: 4.29rem;
+  /* line 43, ../scss/_decabeza.scss */
+  header {
+    margin: 64.08px auto;
   }
-}
-/* line 42, ../scss/_decabeza.scss */
-.contain-to-grid {
-  background: none;
-}
-
-/* line 46, ../scss/_decabeza.scss */
-.top-bar {
-  background: none;
-  color: white;
 }
 
 /* line 51, ../scss/_decabeza.scss */
-.top-bar-section li:not(.has-form) a:not(.button) {
-  background: none;
-  color: white;
-  display: inline;
-  text-decoration: underline;
-  padding: 0 6.5px;
-}
-/* line 58, ../scss/_decabeza.scss */
-.top-bar-section li:not(.has-form) a:not(.button).active {
-  color: white;
-  text-decoration: none;
-}
-/* line 63, ../scss/_decabeza.scss */
-.top-bar-section li:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):focus, .top-bar-section li:not(.has-form) a:not(.button):active, .top-bar-section li:not(.has-form) a:not(.button):visited {
-  background-color: none;
-  background: none;
-  color: white;
-}
-/* line 69, ../scss/_decabeza.scss */
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-  color: white;
-  opacity: .6;
-  transition: opacity 400ms;
+.section {
+  margin-bottom: 54px;
 }
 
-/* line 76, ../scss/_decabeza.scss */
-.top-bar-section ul {
-  text-align: center;
-}
-/* line 79, ../scss/_decabeza.scss */
-.top-bar-section ul li {
-  background: none;
-}
-/* line 83, ../scss/_decabeza.scss */
-.top-bar-section ul li:hover:not(.has-form) > a {
-  background-color: none;
-  background: none;
-}
-
-/* line 92, ../scss/_decabeza.scss */
-header {
-  background: url(../images/bg-header.jpg) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: white;
-  min-height: 260px;
-  padding-bottom: 26px;
-}
-/* line 99, ../scss/_decabeza.scss */
-header a {
-  color: white;
-  font-size: 1.29rem;
-  line-height: 26px;
-  transition: color 0.5s;
-}
-/* line 105, ../scss/_decabeza.scss */
-header a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-/* line 109, ../scss/_decabeza.scss */
-header a:focus, header a:active {
-  color: white;
-  transition: color 0.5s;
-}
-/* line 115, ../scss/_decabeza.scss */
-header p {
-  background: black;
-  display: inline;
-  font-size: 0.93rem;
-  line-height: 32px;
-  padding: 3px 13px;
-}
-/* line 122, ../scss/_decabeza.scss */
-header p.available {
-  background: #8aba56;
-  color: white;
-  display: inline;
-  padding: 3px 13px;
-}
-@media screen and (min-width: 481px) {
-  /* line 131, ../scss/_decabeza.scss */
-  header p {
-    font-size: 1.14rem;
-  }
-}
-
-/* line 139, ../scss/_decabeza.scss */
-#designer, #developer, #contact {
-  padding: 78px 0;
-}
-/* line 142, ../scss/_decabeza.scss */
-#designer h2, #developer h2, #contact h2 {
-  font-size: 2.14rem;
-  line-height: 52px;
-  font-weight: 300;
-}
-/* line 148, ../scss/_decabeza.scss */
-#designer .button-dribbble, #developer .button-dribbble, #contact .button-dribbble, #contact .button-contact {
-  border: 2px solid #ea4c89;
-  border-radius: 3px;
-  color: #ea4c89;
-  display: inline-block;
-  margin-top: 26px;
-  min-width: 260px;
-  padding: 13px 26px;
-  text-transform: uppercase;
-}
-
-/* line 164, ../scss/_decabeza.scss */
-#developer {
+/* line 55, ../scss/_decabeza.scss */
+.contact {
   background: #fafafa;
-  border-bottom: 1px solid #edeff0;
-  border-top: 1px solid #edeff0;
+  border-bottom: 1px solid #eee;
+  padding: 54px 0;
 }
-
-/* line 176, ../scss/_decabeza.scss */
-#contact .button-contact {
-  border: 2px solid #8aba56;
-  color: #8aba56;
+/* line 61, ../scss/_decabeza.scss */
+.contact a {
+  border-color: inherit;
+  color: inherit;
 }
-
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-Bold-webfont.eot");
-  src: url("../fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-BoldItalic-webfont.eot");
-  src: url("../fonts/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic") format("svg");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot");
-  src: url("../fonts/OpenSans-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold-webfont.woff") format("woff"), url("../fonts/OpenSans-ExtraBold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold") format("svg");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-ExtraBoldItalic-webfont.eot");
-  src: url("../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBoldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-ExtraBoldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-ExtraBoldItalic-webfont.svg#open_sansextrabold_italic") format("svg");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-Italic-webfont.eot");
-  src: url("../fonts/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Italic-webfont.svg#open_sansitalic") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-Light-webfont.eot");
-  src: url("../fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-LightItalic-webfont.eot");
-  src: url("../fonts/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-LightItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic") format("svg");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-Semibold-webfont.eot");
-  src: url("../fonts/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold-webfont.woff") format("woff"), url("../fonts/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'open sans';
-  src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot");
-  src: url("../fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiboldItalic-webfont.woff") format("woff"), url("../fonts/OpenSans-SemiboldItalic-webfont.ttf") format("truetype"), url("../fonts/OpenSans-SemiboldItalic-webfont.svg#open_sanssemibold_italic") format("svg");
-  font-weight: 600;
-  font-style: italic;
+/* line 65, ../scss/_decabeza.scss */
+.contact a:hover {
+  border: 0;
+  color: #000;
 }
