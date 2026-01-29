@@ -89,6 +89,7 @@ a:hover{opacity:.85}
 }
 .meta li{padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:rgba(15,17,23,.35)}
 .meta a{color:var(--text)}
+.meta .highlight {background: #fff; color: #222;}
 
 .section{padding:42px 0}
 .section-head{display:flex; flex-direction:column; gap:6px; margin-bottom:18px}
