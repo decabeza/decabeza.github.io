@@ -122,7 +122,11 @@ a:hover{opacity:.85}
 .meta a{color:var(--white)}
 .meta .highlight {background: var(--lime-green); color: var(--white);}
 
-.status{
+.meta .status {
+  background: var(--white) !important;
+}
+
+.status {
   display:inline-flex;
   align-items:center;
   gap:8px;
@@ -523,4 +527,26 @@ figure img{
 
 figure:hover img{
   transform:scale(1);
+}
+
+.lang{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:13px;
+  color:var(--white-60);
+}
+
+.lang a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.lang a.active{
+  color:var(--blue);
+  font-weight:600;
+}
+
+.lang a:hover{
+  color:var(--white);
 }
