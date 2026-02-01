@@ -4,14 +4,28 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>decabeza | Ayuntamiento de Madrid — Proyecto</title>
-  <meta name="description" content="Caso de estudio del proyecto beruby." />
-  <link rel="stylesheet" href="../stylesheets/project.css" />
+  <meta name="description" content="Caso de estudio del proyecto Ayuntamiento de Madrid." />
+  <link rel="stylesheet" href="../stylesheets/styles.css" />
   <link rel="shortcut icon" href="../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="wrap">
-      <a class="back" href="../index.html">← Portfolio</a>
+  <header class="header project">
+    <div class="wrap end">
+      <a class="back" href="../index.html" title="Volver al portfolio">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"/>
+    <path d="M8 8l8 8M16 8l-8 8"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"/>
+  </svg></a>
     </div>
   </header>
 
@@ -33,26 +47,59 @@
             <span class="k">Año</span>
             <span class="v">2015 - 2019</span>
           </div>
-          <div>
-            <span class="k">Tipo</span>
-            <span class="v">Website / Open source</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="galeria">
-      <div class="wrap">
-        <div class="gallery">
-          <img src="../images/ayuntamiento_madrid_1.jpg" alt="Decide madrid website" />
-          <img src="../images/ayuntamiento_madrid_2.jpg" alt="CONSUL Democracy website" />
-          <img src="../images/ayuntamiento_madrid_3.jpg" alt="CONSUL logo" />
-        </div>
+    <section class="gallery-hero" id="galeria">
+      <div class="gallery-hero-grid">
+        <figure class="g g1">
+          <img src="../images/ayuntamiento_madrid_1.jpg" alt="Decide madrid website" loading="lazy" />
+        </figure>
+        <figure class="g g2">
+          <img src="../images/ayuntamiento_madrid_2.jpg" alt="CONSUL Democracy website" loading="lazy" />
+        </figure>
+        <figure class="g g3">
+          <img src="../images/ayuntamiento_madrid_3.jpg" alt="CONSUL logo" loading="lazy" />
+        </figure>
       </div>
     </section>
 
     <section class="section" id="detalle">
       <div class="wrap two">
+        <div>
+          <div class="panel">
+            <h3>Skills</h3>
+            <ul class="skills">
+              <li>User Experience Design</li>
+              <li>Service Design</li>
+              <li>Diseño centrado en la ciudadanía</li>
+              <li>Arquitectura de la información</li>
+              <li>Accesibilidad y usabilidad</li>
+            </ul>
+
+            <h3>Responsabilidades</h3>
+            <ul class="list">
+              <li>Diseño de flujos complejos</li>
+              <li>Experiencia de usuario en entornos institucionales</li>
+              <li>Prototipado y validación</li>
+              <li>Traducción de requisitos normativos y políticos a soluciones de diseño</li>
+            </ul>
+          </div>
+
+          <a class="links" href="https://decide.madrid.es" target="_blank" rel="noreferrer">
+            Visitar web
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H9M17 7V15"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
         <div>
           <h2>Descripción</h2>
           <p>
@@ -66,34 +113,6 @@
           <p>
             Asimismo, participé en la evolución de CONSUL Democracy, la versión base open source del proyecto, adoptada por numerosas ciudades y organizaciones a nivel nacional e internacional. Este trabajo contribuyó a la consolidación de una plataforma reutilizable, escalable y alineada con principios de transparencia, accesibilidad y usabilidad en el ámbito institucional.
           </p>
-        </div>
-
-        <div class="panel">
-          <h3>Skills</h3>
-          <ul class="skills">
-            <li>User Experience Design</li>
-            <li>Service Design</li>
-            <li>Diseño centrado en la ciudadanía</li>
-            <li>Arquitectura de la información</li>
-            <li>Accesibilidad y usabilidad</li>
-          </ul>
-
-          <h3>Responsabilidades</h3>
-          <ul class="list">
-            <li>Diseño de flujos complejos</li>
-            <li>Experiencia de usuario en entornos institucionales</li>
-            <li>Prototipado y validación</li>
-            <li>Traducción de requisitos normativos y políticos a soluciones de diseño</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="links">
-      <div class="wrap">
-        <div class="links">
-          <a class="btn" href="https://decide.madrid.es" target="_blank" rel="noreferrer">Visitar web</a>
-          <a class="btn ghost" href="../index.html">Volver al portfolio</a>
         </div>
       </div>
     </section>

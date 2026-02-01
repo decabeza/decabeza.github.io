@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>decabeza | Product Designer | SaaS & Mobile Apps - Portfolio</title>
+  <title>decabeza | Product Designer - Portfolio</title>
   <meta name="description" content="Portfolio minimalista de trabajos y proyectos." />
   <link rel="stylesheet" href="./stylesheets/styles.css" />
   <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-
   <header class="header">
     <div class="wrap">
       <div class="brand">
         <a class="logo" href="#top">decabeza</a>
-        <p class="tag">Senior Product Designer | SaaS & Mobile Apps</p>
+        <p class="tag">Product Designer</p>
+        <span class="status">
+          <span class="dot" aria-hidden="true"></span>
+          Disponible para proyectos
+        </span>
       </div>
 
       <nav class="nav" aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
       </nav>
     </div>
   </header>
@@ -29,19 +34,42 @@
   <main id="contenido" class="main">
     <section class="hero">
       <div class="wrap">
-        <h1>Mi portfolio.</h1>
-        <p class="lead">Selecciono trabajos con foco en claridad, estética y resultados. Aquí tienes una muestra de lo que hago.</p>
+        <h1>Mi portfolio</h1>
+        <p class="lead">Selecciono trabajos con foco en claridad, estética y resultados. Aquí tienes una pequeña muestra de lo que hago.</p>
 
         <ul class="meta">
-          <li class="highlight">Las Rozas Madrid / En remoto</li>
-          <li class="highlight">Disponible para proyectos</li>
-          <li><a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/decabeza/" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li class="highlight">Las Rozas Madrid / Remoto</li>
+          <li>
+            <a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer" class="ext">
+            LinkedIn
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H9M17 7V15"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/decabeza/" target="_blank" rel="noreferrer" class="ext">
+              GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H9M17 7V15"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="proyectos">
+    <section class="section" id="projects">
       <div class="wrap">
         <div class="section-head">
           <h2>Proyectos</h2>
@@ -49,77 +77,39 @@
         </div>
 
         <div class="grid">
-          <article class="card">
-            <div class="card-top">
+          <article class="card democrateam">
+            <a href="./projects/democrateam.html">
               <h3>democrateam</h3>
-              <span class="pill">Cofundador</span>
-            </div>
-            <p>Instalación, mantenimiento y desarrollo del software open source CONSUL Democracy.</p>
-            <ul class="stack">
-              <li>UX/UI</li><li>RoR</li><li>Open source</li><li>Accesibilidad</li>
-            </ul>
-            <div class="links">
-              <a href="./projects/democrateam.html">Detalles sobre democrateam</a>
-            </div>
+            </a>
           </article>
 
-          <article class="card">
-            <div class="card-top">
+          <article class="card madrid">
+            <a href="./projects/ayuntamiento_madrid.html">
               <h3>Ayuntamiento de Madrid</h3>
-              <span class="pill">UX/UI</span>
-            </div>
-            <p>Diseño de la plataforma de participación ciudadana Decide Madrid.</p>
-            <ul class="stack">
-              <li>UX/UI</li><li>RoR</li><li>Open source</li><li>Accesibilidad</li>
-            </ul>
-            <div class="links">
-              <a href="./projects/ayuntamiento_madrid.html">Detalles sobre Ayuntamiento de Madrid</a>
-            </div>
+            </a>
           </article>
 
-          <article class="card">
-            <div class="card-top">
+          <article class="card aap">
+            <a href="./projects/aprendoaprogramar.html">
               <h3>Aprendo a programar</h3>
-              <span class="pill">Cofundador</span>
-            </div>
-            <p>Cursos de programación para niños mediante el uso de bloques visuales.</p>
-            <ul class="stack">
-              <li>UX/UI</li><li>Videotutoriales</li>
-            </ul>
-            <div class="links">
-              <a href="./projects/aprendoaprogramar.html">Detalles sobre Aprendo a programar</a>
-            </div>
+            </a>
           </article>
 
-          <article class="card">
-            <div class="card-top">
+          <article class="card beruby">
+            <a href="./projects/beruby.html">
               <h3>beruby</h3>
-              <span class="pill">UX/UI</span>
-            </div>
-            <p>Diseño UX/UI para el portal de cashback beruby.</p>
-            <ul class="stack">
-              <li>Identidad</li><li>Rediseño</li><li>UX/UI</li><li>Materiales marketing</li>
-            </ul>
-            <div class="links">
-              <a href="./projects/beruby.html">Detalles sobre beruby</a>
-            </div>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="sobre-mi">
+    <section class="section" id="about">
       <div class="wrap two">
-        <div>
-          <h2>Sobre mí</h2>
-          <p>Soy Alberto, profesional del <strong>diseño UX/UI</strong> y <strong>desarrollo web</strong> con más de 20 años de experiencia en la creación de productos digitales y consultoría. He trabajado tanto por cuenta propia, bajo mi marca decabeza, como en proyectos colaborativos y entornos tecnológicos diversos, incluyendo plataformas open source.</p>
-
-          <p>Mi enfoque de trabajo se basa en la resolución de problemas desde una perspectiva centrada en el usuario, aplicando buenas prácticas de accesibilidad.</p>
-        </div>
         <div class="facts">
           <div class="fact">
             <span class="k">Especialidad</span>
-            <span class="v">Diseño UI/UX</span>
+            <span class="v">Diseño de Producto, Diseño UI/UX</span>
           </div>
           <div class="fact">
             <span class="k">Enfoque</span>
@@ -127,33 +117,53 @@
           </div>
           <div class="fact">
             <span class="k">Stack</span>
-            <span class="v">HTML/CSS/SCSS, RoR, Git</span>
+            <span class="v">HTML5, CSS3, SCSS, Ruby on Rails, Git</span>
           </div>
           <div class="fact">
             <span class="k">Software</span>
-            <span class="v">Figma, Photoshop, Sketch</span>
+            <span class="v">Figma, Photoshop, Sketch, Premiere</span>
           </div>
           <div class="fact">
             <span class="k">Idiomas</span>
             <span class="v">ES / EN</span>
           </div>
         </div>
+
+        <div>
+          <h2>Un poco sobre mí</h2>
+          <p>¡Hola! Soy Alberto, profesional del <strong>Diseño de producto</strong>, <strong>diseño UX/UI</strong> y <strong>desarrollo web</strong> con más de 20 años de experiencia en la creación de productos digitales y consultoría.</p>
+
+          <p>Durante años he trabajado tanto por cuenta propia, bajo mi marca <em>decabeza</em>, como en diferentes empresas y proyectos colaborativos y entornos tecnológicos diversos, incluyendo plataformas open source.</p>
+
+          <p>Mi enfoque de trabajo siempre se basa en la resolución de problemas desde una perspectiva centrada en el usuario, aplicando buenas prácticas de accesibilidad.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="contacto">
+    <section class="section" id="contact">
       <div class="wrap">
-        <div class="section-head">
-          <h2>Contacto</h2>
-          <p>Escríbeme y charlamos.</p>
-        </div>
-
         <div class="contact">
-          <a class="btn" href="mailto:alberto@decabeza.es">alberto@decabeza.es</a>
+          <div class="section-head">
+            <h2>Contacto</h2>
+            <p>Escríbeme y charlamos.</p>
+            <span class="status">
+              <span class="dot" aria-hidden="true"></span>
+              Disponible para proyectos
+            </span>
+          </div>
+
           <div class="small">
-            <a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <span>·</span>
-            <a href="https://github.com/decabeza/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:alberto@decabeza.es">
+              alberto@decabeza.es
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H9M17 7V15"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
