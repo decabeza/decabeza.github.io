@@ -1,41 +1,16 @@
-body::before{
-  /*content:"";*/
-}
-
-:root{
-
+:root {
   --panel:#0f1117;
-  --line: #;
-  --accent:#e7e9ee;
+  --line: #cbd2d9;
   --radius:16px;
-  --black-content-mid-2: #0006;
-
-  --surface-low: #ececec;
-  --surface-mid: #e4e4e4;
-  --surface-midhigh: #e0e0e0;
-  --surface-high: #d8d8d8;
-  --black-content-high: #0009;
-  --lime-green: #34c759;
-  --blue: #0d3ff5;
-  --black-content-mid: #ffffff80;
-  --gainsboro: #7e7e7e;
-  --lime-green-hover: #34c759;
-
-  /* New theme */
   --bg: #fff;
   --text: #1c2b33;
   --blue: #0064e0;
   --black: #000;
   --white: #fff;
   --border: #cbd2d9;
-
-
   --light: #f8f9fb;
   --muted: #5d6c7b;
-
-
   --max: 1080px;
-
 }
 
 * {
@@ -143,7 +118,7 @@ figcaption {
 }
 
 .k {
-  color:var(--black-content-mid-2);
+  color:var(--blue);
   font-size: 14px;
 }
 
@@ -163,10 +138,6 @@ figcaption {
 
   img {
     position: absolute;
-  }
-
-  p {
-    color: var(--muted);
   }
 
   &.democrateam {
@@ -235,6 +206,10 @@ figcaption {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+.section {
+  padding: 48px 0;
 }
 
 .section.projects {
@@ -435,7 +410,7 @@ figcaption {
 /* Gallery */
 
 .card {
-  background: var(--surface-low);
+  background: var(--light);
 }
 
 .card:hover a {
