@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>decabeza | beruby — Proyecto</title>
-  <meta name="description" content="Caso de estudio del proyecto beruby.">
+  <meta name="description" content="Caso de estudio del proyecto democrateam.">
   <link rel="stylesheet" href="../stylesheets/styles.css">
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,27 +12,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header project">
-    <div class="wrap end">
-      <a class="back" href="../index.html" title="Volver al portfolio">
-        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
-    <circle cx="12" cy="12" r="10"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"/>
-    <path d="M8 8l8 8M16 8l-8 8"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"/>
-  </svg></a>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <a class="logo" href="../index.html">🤟🏻 decabeza</a>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html#projects">Proyectos</a>
+        <a href="../about.html">Sobre mí</a>
+        <a href="mailto:alberto@decabeza.es">
+          Contacto
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="lang">
+        <a href="#" class="active">Español</a>
+        <span>/</span>
+        <a href="../en/projects/beruby.html">English</a>
+      </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="hero" id="overview">
+    <section class="hero beruby">
       <div class="wrap">
-        <span class="eyebrow">Proyecto</span>
         <h1>beruby</h1>
         <p class="lead">
           Plataforma de cashback y ahorro online. Trabajo centrado en mejora de experiencia de usuario,
@@ -49,20 +56,6 @@
             <span class="v">2011 - 2015</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="gallery-hero" id="galeria">
-      <div class="gallery-hero-grid">
-        <figure class="g g1">
-          <img src="../images/beruby_2.jpg" alt="beruby logo" loading="lazy">
-        </figure>
-        <figure class="g g2">
-          <img src="../images/beruby_1.jpg" alt="beruby website" loading="lazy">
-        </figure>
-        <figure class="g g3">
-          <img src="../images/beruby_3.jpg" alt="beruby app" loading="lazy">
-        </figure>
       </div>
     </section>
 
@@ -87,19 +80,19 @@
               <li>Rediseño de identidad</li>
               <li>Mejoras de usabilidad</li>
             </ul>
-          </div>
 
-          <a class="links" href="https://www.beruby.com" target="_blank" rel="noreferrer">
+            <a class="links" href="https://www.beruby.com" target="_blank" rel="noreferrer">
             Visitar web
-            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17L17 7M17 7H9M17 7V15"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </a>
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H9M17 7V15"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div>
@@ -123,12 +116,8 @@
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="y"></span> decabeza</p>
+      <p>© 2026 decabeza</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear()
-  </script>
 </body>
 </html>

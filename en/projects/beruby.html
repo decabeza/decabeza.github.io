@@ -12,32 +12,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header project">
-    <div class="wrap end">
-      <a class="back" href="../index.html" title="Back to portfolio">
-        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="10"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"/>
-          <path d="M8 8l8 8M16 8l-8 8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"/>
-        </svg>
-      </a>
+  <header class="header">
+    <div class="wrap">
+      <div class="brand">
+        <a class="logo" href="../../index.html">🤟🏻 decabeza</a>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html#projects">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="mailto:alberto@decabeza.es">
+          Contact
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+
+      <div class="lang">
+        <a href="../../projects/beruby.html">Español</a>
+        <span>/</span>
+        <a href="#" class="active">English</a>
+      </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="hero" id="overview">
+    <section class="hero beruby">
       <div class="wrap">
-        <span class="eyebrow">Project</span>
         <h1>beruby</h1>
         <p class="lead">
-          Online cashback and savings platform. Work focused on improving user experience,
-          visual clarity and conversion flow optimization.
+          Online cashback and savings platform. Work focused on improving user experience, visual clarity, and conversion flow optimization.
         </p>
 
         <div class="meta">
@@ -47,27 +52,13 @@
           </div>
           <div>
             <span class="k">Year</span>
-            <span class="v">2011 – 2015</span>
+            <span class="v">2011 - 2015</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="gallery-hero" id="gallery">
-      <div class="gallery-hero-grid">
-        <figure class="g g1">
-          <img src="../../images/beruby_2.jpg" alt="beruby logo" loading="lazy">
-        </figure>
-        <figure class="g g2">
-          <img src="../../images/beruby_1.jpg" alt="beruby website" loading="lazy">
-        </figure>
-        <figure class="g g3">
-          <img src="../../images/beruby_3.jpg" alt="beruby app" loading="lazy">
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" id="details">
+    <section class="section" id="detalle">
       <div class="wrap two">
         <div>
           <div class="panel">
@@ -85,38 +76,34 @@
             <ul class="list">
               <li>Interface design</li>
               <li>Prototyping</li>
-              <li>Brand identity redesign</li>
+              <li>Brand redesign</li>
               <li>Usability improvements</li>
             </ul>
-          </div>
 
-          <a class="links" href="https://www.beruby.com" target="_blank" rel="noreferrer">
-            Visit website
-            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M7 17L17 7M17 7H9M17 7V15"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"/>
-            </svg>
-          </a>
+            <a class="links" href="https://www.beruby.com" target="_blank" rel="noreferrer">
+              Visit website
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H9M17 7V15"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div>
           <h2>Description</h2>
           <p>
-            UX/UI design for the beruby cashback platform, along with the creation of digital marketing
-            materials including banners, newsletters and landing pages.
+            UX/UI design for the beruby cashback portal, as well as creation of digital marketing materials including banners, newsletters, and landing pages.
           </p>
           <p>
-            The main goal of the project was to simplify the interface and improve the user’s
-            understanding of the cashback value proposition. Work focused on visual hierarchy,
-            noise reduction and clarity of primary call-to-action points.
+            The project’s goal was to simplify the interface and improve users’ understanding of the cashback value proposition. Work focused on visual hierarchy, noise reduction, and clarity of the primary calls to action.
           </p>
           <p>
-            Key components were redesigned, the sign-up flow was optimized and visual consistency
-            across sections was improved.
+            Key components were redesigned, the sign-up flow was optimized, and visual consistency across sections was improved.
           </p>
         </div>
       </div>
@@ -125,12 +112,8 @@
 
   <footer class="footer">
     <div class="wrap">
-      <p>© <span id="y"></span> decabeza</p>
+      <p>© 2026 decabeza</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear()
-  </script>
 </body>
 </html>

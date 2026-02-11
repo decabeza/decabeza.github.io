@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>decabeza | Product Designer - Portfolio</title>
-  <meta name="description" content="Portfolio minimalista de trabajos y proyectos.">
+  <meta name="description" content="Portfolio de Alberto, diseñador de productos minimalista.">
   <link rel="stylesheet" href="./stylesheets/styles.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,31 +15,34 @@
   <header class="header">
     <div class="wrap">
       <div class="brand">
-        <a class="logo" href="#top">decabeza</a>
-        <p class="tag">Product Designer</p>
-        <div class="lang">
-          <a href="#" class="active">ES</a>
-          <span>/</span>
-          <a href="en/index.html">EN</a>
-        </div>
+        <a class="logo" href="#">🤟🏻 decabeza</a>
       </div>
 
       <nav class="nav" aria-label="Navegación principal">
         <a href="#projects">Proyectos</a>
-        <a href="#about">Sobre mí</a>
-        <a href="#contact">Contacto</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="mailto:alberto@decabeza.es">
+          Contacto
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </nav>
+
+      <div class="lang">
+        <a href="#" class="active">Español</a>
+        <span>/</span>
+        <a href="en/index.html">English</a>
+      </div>
     </div>
   </header>
 
   <main id="contenido" class="main">
-    <section class="hero">
+    <section class="hero homepage">
       <div class="wrap">
-        <h1>Mi portfolio</h1>
-        <p class="lead">Selecciono trabajos con foco en claridad, estética y resultados. Aquí tienes una pequeña muestra de lo que hago.</p>
+        <h1>Soy Alberto, diseñador de producto. Me gusta crear experiencias centradas en el usuario, agradables y humanas.</h1>
 
         <ul class="meta">
-          <li class="highlight">Las Rozas Madrid / Remoto</li>
           <li>
             <a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer" class="ext">
             LinkedIn
@@ -66,123 +69,77 @@
             </svg>
             </a>
           </li>
-          <li class="status">
-            <span class="dot" aria-hidden="true"></span>
-            Disponible para proyectos
+          <li class="highlight">
+            <span class="status">
+              <span class="dot" aria-hidden="true"></span>Disponible para proyectos en remoto
+            </span>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Proyectos</h2>
-          <p>Una selección de algunos de los proyectos en los que he trabajado.</p>
-        </div>
-
-        <div class="grid">
-          <article class="card democrateam">
-            <a href="./projects/democrateam.html">
-              <h3>democrateam</h3>
-            </a>
-          </article>
-
-          <article class="card madrid">
-            <a href="./projects/ayuntamiento_madrid.html">
-              <h3>Ayuntamiento de Madrid</h3>
-            </a>
-          </article>
-
-          <article class="card aap">
-            <a href="./projects/aprendoaprogramar.html">
-              <h3>Aprendo a programar</h3>
-            </a>
-          </article>
-
-          <article class="card beruby">
-            <a href="./projects/beruby.html">
-              <h3>beruby</h3>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap two">
+    <section>
+      <div class="wrap two-columns">
         <div class="facts">
           <div class="fact">
             <span class="k">Especialidad</span>
-            <span class="v">Diseño de Producto, Diseño UI/UX</span>
+            <span><strong>Diseño de Producto, Diseño UX/UI</strong></span>
           </div>
           <div class="fact">
             <span class="k">Enfoque</span>
-            <span class="v">Minimalismo + Accesibilidad</span>
+            <span><strong>Minimalismo + Accesibilidad</strong></span>
           </div>
+        </div>
+        <div class="facts">
           <div class="fact">
             <span class="k">Stack</span>
-            <span class="v">HTML5, CSS3, SCSS, Ruby on Rails, Git</span>
+            <span><strong>HTML5/CSS3, SCSS, Ruby on Rails, Git</strong></span>
           </div>
           <div class="fact">
             <span class="k">Software</span>
-            <span class="v">Figma, Photoshop, Sketch, Premiere</span>
+            <span><strong>Figma, Photoshop, Sketch, Premiere</strong></span>
           </div>
-          <div class="fact">
-            <span class="k">Idiomas</span>
-            <span class="v">ES / EN</span>
-          </div>
-        </div>
-
-        <div>
-          <h2>Un poco sobre mí</h2>
-          <p>¡Hola! Soy Alberto, profesional del <strong>Diseño de producto</strong>, <strong>diseño UX/UI</strong> y <strong>desarrollo web</strong> con más de 20 años de experiencia en la creación de productos digitales y consultoría.</p>
-
-          <p>Durante años he trabajado tanto por cuenta propia, bajo mi marca <em>decabeza</em>, como en diferentes empresas y proyectos colaborativos y entornos tecnológicos diversos, incluyendo plataformas open source.</p>
-
-          <p>Mi enfoque de trabajo siempre se basa en la resolución de problemas desde una perspectiva centrada en el usuario, aplicando buenas prácticas de accesibilidad.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section projects" id="projects">
       <div class="wrap">
-        <div class="contact">
-          <div class="section-head">
-            <h2>Contacto</h2>
-            <p>Escríbeme y charlamos.</p>
-            <span class="status">
-              <span class="dot" aria-hidden="true"></span>
-              Disponible para proyectos
-            </span>
-          </div>
+        <div class="grid">
+          <article class="card democrateam">
+            <h3>democrateam</h3>
+            <p>Co-fundador. Especializados en soluciones de participación ciudadana y gobierno abierto utilizando <i>software open source</i>.</p>
+            <a href="./projects/democrateam.html">Caso de estudio democrateam &#8594;</a>
+            <img src="images/democrateam_homepage.png" alt="" role="presentation" loading="lazy">
+          </article>
 
-          <div class="small">
-            <a href="mailto:alberto@decabeza.es">
-              alberto@decabeza.es
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 17L17 7M17 7H9M17 7V15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
+          <article class="card madrid">
+            <h3>Decide Madrid</h3>
+            <p>Diseño y desarrollo de la aplicación web de gobierno abierto y democracia directa orientada a la participación ciudadana.</p>
+            <a href="./projects/ayuntamiento_madrid.html">Caso de estudio Decide Madrid &#8594;</a>
+            <img src="images/ayuntamiento_madrid_homepage.png" alt="" role="presentation" loading="lazy">
+          </article>
+
+          <article class="card aap">
+            <h3>Aprendo a programar</h3>
+            <p>Co-fundador. Proyecto educativo con el objetivo de acercar la programación a niños de forma clara, visual y accesible.</p>
+            <a href="./projects/aprendoaprogramar.html">Caso de estudio Aprendo a programar &#8594;</a>
+            <img src="images/aprendo_a_programar_homepage.png" alt="" role="presentation" loading="lazy">
+          </article>
+
+          <article class="card beruby">
+            <h3>beruby</h3>
+            <p>Plataforma de cashback y ahorro online. Mejora de experiencia de usuario, claridad visual y diseño <i>responsive</i>.</p>
+            <a href="./projects/beruby.html">Caso de estudio beruby &#8594;</a>
+            <img src="images/beruby_homepage.png" alt="" role="presentation" loading="lazy">
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">
-      <p>© <span id="y"></span> decabeza</p>
-    </div>
+    <p>© 2026 decabeza</p>
   </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear()
-  </script>
 </body>
 </html>
