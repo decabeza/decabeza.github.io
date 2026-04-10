@@ -252,11 +252,6 @@ figcaption {
   padding: 48px 0;
 }
 
-.section.projects {
-  padding-top: 96px;
-}
-
-
 .hero {
 
   &.democrateam {
@@ -320,7 +315,6 @@ figcaption {
   opacity: 1;
 }
 
-/* Animación infinita */
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -330,7 +324,6 @@ figcaption {
   }
 }
 
-/* Fade lateral (muy pro) */
 .logos-wrapper::before,
 .logos-wrapper::after {
   content: "";
@@ -359,7 +352,6 @@ figcaption {
   width: 100%;
 }
 
-
 .header .wrap{
   display:flex; align-items:center; justify-content:space-between;
   padding:18px 0;
@@ -380,9 +372,6 @@ figcaption {
 .nav{display:flex; gap:18px; flex-wrap:wrap}
 .nav a{color:var(--muted); font-size:14px}
 .nav a:hover{color:var(--text)}
-
-
-
 
 .lead{
   margin:0 0 18px;
@@ -413,11 +402,6 @@ figcaption {
 .meta li{padding:6px 10px; border-radius:999px; background: var(--black);}
 .meta a{color:var(--white)}
 
-
-.meta .status {
-  /*background: var(--white) !important;*/
-}
-
 .status {
   display:inline-flex;
   align-items:center;
@@ -440,7 +424,6 @@ figcaption {
   100%{ box-shadow:0 0 0 0 rgba(34,197,94,0); }
 }
 
-
 .ext {
   display:inline-flex;
   align-items:center;
@@ -448,8 +431,14 @@ figcaption {
   font-weight:600;
 }
 
-.section h2{font-size:20px; letter-spacing:-.2px}
-.section:last-of-type {padding-bottom:0;}
+.section h2 {
+  font-size: 20px;
+  letter-spacing: -.2px;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
 
 .pill {
   background: var(--white);
@@ -489,7 +478,6 @@ figcaption {
 }
 .two p{color:var(--muted); margin:10px 0 0}
 
-
 .contact{
   display:flex; align-items:center; justify-content:space-between;
   gap:14px; flex-wrap:wrap;
@@ -512,12 +500,6 @@ figcaption {
 .small a{color:var(--white); opacity:.9}
 .small a:hover{opacity:1}
 
-
-
-/*.footlinks{display:flex; gap:10px; align-items:center}
-.footlinks a{color:var(--muted)}
-.footlinks a:hover{color:var(--text)}
-*/
 @media (max-width: 820px){
   .card{grid-column:span 12}
   .two{grid-template-columns:1fr}
@@ -532,9 +514,6 @@ figcaption {
 .card:hover a {
   opacity: 1;
 }
-
-
-
 
 /* Projects */
 
@@ -620,12 +599,6 @@ figcaption {
   padding: 6px 0;
 }
 
-
-
-
-
-
-
 .gallery-hero{
   height:100vh;
   padding:0;
@@ -705,41 +678,4 @@ figure:hover img{
 .lang a:hover{
   color:var(--black);
   text-decoration: underline;
-}
-
-
-
-/* BASELINE  */
-
-/* Grid overlay: baseline + columns */
-:root{
-  --baseline: 24px;          /* ritmo vertical */
-  --col: 200px;              /* ancho de columna guía */
-  --gutter: 20px;           /* separación entre columnas guía */
-  --grid-color: rgba(0,0,0,.12);
-}
-
-html{ line-height: calc(var(--baseline) * 3); } /* p.ej. 24px si baseline=8px */
-
-body::before{
-  /*content:"";*/
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-  background:
-    /* horizontales (baseline) */
-    repeating-linear-gradient(
-      to bottom,
-      var(--grid-color) 0 1px,
-      transparent 1px var(--baseline)
-    ),
-    /* verticales (columnas + gutter) */
-    repeating-linear-gradient(
-      to right,
-      rgba(0,128,255,.14) 0 1px,
-      transparent 1px var(--col),
-      rgba(0,128,255,.10) var(--col) calc(var(--col) + 1px),
-      transparent calc(var(--col) + 1px) calc(var(--col) + var(--gutter))
-    );
 }
