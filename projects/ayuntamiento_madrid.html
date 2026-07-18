@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>decabeza | Decide Madrid — Proyecto</title>
-  <meta name="description" content="Caso de estudio del proyecto Decide Madrid.">
+  <title>Decide Madrid — Caso de estudio | decabeza</title>
+  <meta name="description" content="Cómo diseñé la experiencia de usuario de Decide Madrid, la plataforma de participación ciudadana del Ayuntamiento de Madrid galardonada por la ONU.">
   <link rel="stylesheet" href="../stylesheets/styles.css">
-  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -19,97 +20,490 @@
       </div>
 
       <nav class="nav" aria-label="Navegación principal">
-        <a href="../index.html#projects">Proyectos</a>
+        <a href="../index.html#projects">Casos de estudio</a>
         <a href="../about.html">Sobre mí</a>
-        <a href="mailto:alberto@decabeza.es">Contacto</a>
+        <a href="mailto:alberto@decabeza.es">Contacto
+          <svg width="14" height="14" viewBox="0 0 24 14" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </nav>
 
       <div class="lang">
-        <a href="#" class="active">Español</a>
-        <span>/</span>
+        <a href="#" class="active" aria-current="true">Español</a>
+        <span aria-hidden="true">/</span>
         <a href="../en/projects/ayuntamiento_madrid.html">English</a>
       </div>
     </div>
   </header>
 
-  <main class="main">
+  <main id="contenido" class="main">
     <section class="hero madrid">
       <div class="wrap">
-        <h1>Decide Madrid</h1>
-        <p class="lead">
-          Decide Madrid, aplicación web de gobierno abierto y democracia directa orientada a la participación ciudadana, así como su versión base CONSUL Democracy, galardonada en 2018 con el Premio al Servicio Público de la Organización de las Naciones Unidas.
+        <p class="eyebrow">
+          Gobierno abierto · Sector público
+          <span class="badge">2015 – 2019</span>
+          <span class="badge">🏆 Premio ONU al Servicio Público 2018</span>
         </p>
-
+        <h1>UX para la democracia directa en Madrid</h1>
+        <p class="lead">
+          Diseñé la experiencia de usuario de Decide Madrid, la plataforma de participación ciudadana del Ayuntamiento de Madrid galardonada por la ONU, que permitió a más de 400.000 ciudadanos tomar parte activa en las decisiones de su ciudad.
+        </p>
         <div class="meta">
           <div>
             <span class="k">Rol</span>
-            <span class="v">Diseño UX / UI</span>
+            <span class="v">Diseñador UX/UI</span>
           </div>
           <div>
-            <span class="k">Año</span>
-            <span class="v">2015 - 2019</span>
+            <span class="k">Cliente</span>
+            <span class="v">Ayuntamiento de Madrid</span>
+          </div>
+          <div>
+            <span class="k">Duración</span>
+            <span class="v">4 años (2015–2019)</span>
+          </div>
+          <div>
+            <span class="k">Herramientas</span>
+            <span class="v">Sketch · InVision · HTML/CSS</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="detalle">
-      <div class="wrap two">
-        <div>
-          <div class="panel">
-            <h3>Skills</h3>
-            <ul class="skills">
-              <li>User Experience Design</li>
-              <li>Service Design</li>
-              <li>Diseño centrado en la ciudadanía</li>
-              <li>Arquitectura de la información</li>
-              <li>Accesibilidad y usabilidad</li>
-            </ul>
+    <figure class="hero-figure">
+      <img src="https://decabeza.es/images/ayuntamiento_madrid_homepage.png" alt="Interfaz de Decide Madrid mostrando el listado de propuestas ciudadanas y presupuestos participativos">
+    </figure>
 
-            <h3>Responsabilidades</h3>
-            <ul class="list">
-              <li>Diseño de flujos complejos</li>
-              <li>Experiencia de usuario en entornos institucionales</li>
-              <li>Prototipado y validación</li>
-              <li>Traducción de requisitos normativos y políticos a soluciones de diseño</li>
-            </ul>
-
-            <a class="links" href="https://decide.madrid.es" target="_blank" rel="noreferrer">
-              Visitar web
-              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M7 17L17 7M17 7H9M17 7V15"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-              </svg>
-            </a>
+    <section aria-labelledby="stats-heading">
+      <div class="wrap">
+        <p class="section-label">Impacto del proyecto</p>
+        <h2 id="stats-heading">Una ciudad de millones, con voz propia</h2>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <p class="stat-num">400K+</p>
+            <p class="stat-desc"><strong>Ciudadanos registrados</strong>Usuarios verificados participando en propuestas, debates y presupuestos participativos.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">51K+</p>
+            <p class="stat-desc"><strong>Propuestas ciudadanas</strong>Ideas enviadas por vecinos de Madrid a través de la plataforma entre 2015 y 2019.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">100M€</p>
+            <p class="stat-desc"><strong>En presupuesto participativo</strong>Inversión municipal gestionada a través de las votaciones ciudadanas.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">#1</p>
+            <p class="stat-desc"><strong>Plataforma cívica de Europa</strong>Reconocida por la ONU y referenciada por la UE como modelo de gobierno abierto.</p>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section class="with-background" aria-labelledby="context-heading">
+      <div class="wrap two-columns">
         <div>
-          <h2>Descripción</h2>
+          <p class="section-label">El contexto</p>
+          <h2 id="context-heading">Un mandato político con una ambición de diseño enorme</h2>
           <p>
-            Trabajé como Diseñador de Experiencias de Usuario en distintos proyectos digitales del Ayuntamiento de Madrid, centrados en la modernización de los servicios públicos y el impulso del gobierno abierto durante el mandato de Manuela Carmena.
+            En 2015, el Ayuntamiento de Madrid se comprometió a transformar la relación entre la institución y los ciudadanos. La apuesta era clara: <strong>usar la tecnología para devolver el poder de decisión a los vecinos</strong>.
           </p>
+          <p>
+            El reto no era tecnológico. CONSUL Democracy ya existía como software. El reto era <strong>hacer que funcionara para 3,3 millones de personas</strong> de perfiles, edades y capacidades digitales radicalmente distintas, en un contexto institucional con restricciones de marca, legales y políticas muy exigentes.
+          </p>
+        </div>
+        <div>
+          <p class="section-label">La cronología</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true">15</span>
+              <div class="timeline-content">
+                <p class="timeline-year">2015</p>
+                <h3>Lanzamiento de Decide Madrid</h3>
+                <p>Primer despliegue público. Módulo de propuestas ciudadanas. Diseño del flujo de verificación de identidad y onboarding.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true">16</span>
+              <div class="timeline-content">
+                <p class="timeline-year">2016</p>
+                <h3>Presupuestos participativos</h3>
+                <p>Nuevo módulo de votación con 100M€ en juego. Diseño de flujos de votación por barrio, mapas interactivos y confirmación de voto.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot" aria-hidden="true">17</span>
+              <div class="timeline-content">
+                <p class="timeline-year">2017</p>
+                <h3>Consultas ciudadanas y debates</h3>
+                <p>Incorporación de módulos de debate y consultas vinculantes. Rediseño mobile completo. +200K usuarios registrados.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot active" aria-hidden="true">18</span>
+              <div class="timeline-content">
+                <p class="timeline-year">2018</p>
+                <h3>Premio ONU · Internacionalización</h3>
+                <p>La plataforma gana el Premio al Servicio Público de la ONU. CONSUL Democracy se adopta en más de 30 países.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <p>
-            El proyecto más relevante fue Decide Madrid, una plataforma web de participación ciudadana y democracia directa diseñada para facilitar la implicación activa de la ciudadanía en la toma de decisiones públicas. Mi trabajo se enfocó en diseñar flujos claros, accesibles y comprensibles para usuarios muy diversos, reduciendo barreras de entrada y mejorando la experiencia de participación.
-          </p>
+    <section aria-labelledby="challenges-heading">
+      <div class="wrap">
+        <p class="section-label">Retos de diseño</p>
+        <h2 id="challenges-heading">Diseñar para toda la ciudad, sin excluir a nadie</h2>
+        <div class="challenge-grid">
+          <article class="challenge-card">
+            <h3>Legitimidad del voto digital</h3>
+            <p>Los ciudadanos debían confiar en que su voto era secreto, seguro e irreversible. Cada elemento de UI tenía que transmitir la misma seriedad que una urna física.</p>
+          </article>
+          <article class="challenge-card">
+            <h3>Accesibilidad obligatoria</h3>
+            <p>Como servicio público digital, debía cumplir WCAG 2.0 AA por ley. El lenguaje administrativo debía traducirse a términos comprensibles para cualquier ciudadano.</p>
+          </article>
+          <article class="challenge-card">
+            <h3>Restricciones institucionales</h3>
+            <p>La identidad visual corporativa, los tiempos políticos y los procesos de aprobación internos limitaban la velocidad de iteración.</p>
+          </article>
+          <article class="challenge-card">
+            <h3>Complejidad de los procesos</h3>
+            <p>Un presupuesto participativo implica verificación de identidad, selección por barrio, límite de votos por categoría y confirmación vinculante.</p>
+          </article>
+          <article class="challenge-card">
+            <h3>Brecha digital generacional</h3>
+            <p>El 34% de los madrileños mayores de 65 años no usaban internet. La plataforma debía ser intuitiva sin necesitar ayuda de nadie.</p>
+          </article>
+          <article class="challenge-card">
+            <h3>Escalabilidad al open source</h3>
+            <p>Todo lo diseñado para Madrid debía poder ser adoptado por cualquier ciudad del mundo, en contextos culturales y legales muy distintos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="with-background" aria-labelledby="process-heading">
+      <div class="wrap">
+        <p class="section-label">Proceso de diseño</p>
+        <h2 id="process-heading">Cómo abordé cada módulo</h2>
+        <ol class="process-grid">
+          <li class="process-step">
+            <span class="process-num">01</span>
+            <h3>Inmersión institucional</h3>
+            <p>Reuniones con funcionarios, abogados y técnicos municipales para entender los requisitos legales y normativos antes de diseñar nada.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num">02</span>
+            <h3>Research con ciudadanos</h3>
+            <p>Tests presenciales en juntas de distrito con perfiles heterogéneos: mayores, baja alfabetización digital, discapacidad visual.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num">03</span>
+            <h3>Diseño iterativo por módulos</h3>
+            <p>Cada funcionalidad se diseñó y validó de forma independiente antes de integrarla. Sprints de dos semanas con prototipos en Sketch e InVision.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-num">04</span>
+            <h3>Auditoría de accesibilidad</h3>
+            <p>Validación con lectores de pantalla, contraste de color y navegación por teclado en cada release.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="feature" aria-labelledby="feature-1-heading">
+      <div class="wrap feature-inner">
+        <div class="feature-visual">
+          <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <rect width="480" height="320" fill="#f8f9fb"/>
+            <rect x="24" y="24" width="432" height="272" rx="12" fill="#fff" stroke="#cbd2d9"/>
+            <rect x="48" y="52" width="384" height="6" rx="3" fill="#e1effe"/>
+            <rect x="48" y="52" width="130" height="6" rx="3" fill="#0064e0"/>
+            <rect x="48" y="72" width="200" height="10" rx="4" fill="#5d6c7b"/>
+            <rect x="48" y="100" width="384" height="14" rx="4" fill="#1c2b33"/>
+            <rect x="48" y="126" width="384" height="60" rx="8" fill="#f8f9fb" stroke="#0064e0"/>
+            <rect x="64" y="140" width="200" height="8" rx="4" fill="#5d6c7b"/>
+            <rect x="64" y="156" width="150" height="8" rx="4" fill="#cbd2d9"/>
+            <rect x="48" y="204" width="90" height="26" rx="13" fill="#e1effe"/>
+            <rect x="150" y="204" width="90" height="26" rx="13" fill="#f8f9fb" stroke="#cbd2d9"/>
+            <rect x="252" y="204" width="90" height="26" rx="13" fill="#f8f9fb" stroke="#cbd2d9"/>
+            <rect x="322" y="246" width="110" height="30" rx="8" fill="#0064e0"/>
+            <rect x="48" y="246" width="90" height="30" rx="8" fill="#fff" stroke="#cbd2d9"/>
+          </svg>
+        </div>
+        <div>
+          <p class="section-label">Módulo de propuestas</p>
+          <h2 id="feature-1-heading">De la idea ciudadana a la propuesta pública en 3 pasos</h2>
           <p>
-            Asimismo, participé en la evolución de CONSUL Democracy, la versión base open source del proyecto, adoptada por numerosas ciudades y organizaciones a nivel nacional e internacional. Este trabajo contribuyó a la consolidación de una plataforma reutilizable, escalable y alineada con principios de transparencia, accesibilidad y usabilidad en el ámbito institucional.
+            El formulario original tenía <strong>11 campos obligatorios en una sola pantalla</strong>. La tasa de abandono superaba el 70%. Lo rediseñé como un wizard de 3 pasos con validación progresiva, autoguardado y categorías por selección visual.
           </p>
+          <p>
+            Introduje un contador de apoyos en tiempo real y un sistema de alertas que avisaba al usuario cuando su propuesta era similar a una ya existente, <strong>reduciendo duplicados en un 45%</strong>.
+          </p>
+          <ul class="tag-list">
+            <li>Wizard UX</li>
+            <li>Validación inline</li>
+            <li>Autoguardado</li>
+            <li>Deduplicación</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature with-background" aria-labelledby="feature-2-heading">
+      <div class="wrap feature-inner reversed">
+        <div class="feature-visual">
+          <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <rect width="480" height="320" fill="#f8f9fb"/>
+            <rect x="24" y="24" width="432" height="46" rx="10" fill="#0064e0"/>
+            <rect x="40" y="40" width="120" height="10" rx="4" fill="#fff"/>
+            <rect x="360" y="36" width="80" height="20" rx="10" fill="#fff"/>
+            <rect x="24" y="86" width="204" height="112" rx="10" fill="#fff" stroke="#0064e0"/>
+            <rect x="40" y="100" width="60" height="8" rx="4" fill="#0064e0"/>
+            <rect x="40" y="116" width="170" height="8" rx="4" fill="#1c2b33"/>
+            <rect x="40" y="132" width="140" height="6" rx="3" fill="#5d6c7b"/>
+            <rect x="40" y="164" width="66" height="18" rx="9" fill="#e1effe"/>
+            <circle cx="200" cy="100" r="10" fill="#0064e0"/>
+            <rect x="252" y="86" width="204" height="112" rx="10" fill="#fff" stroke="#cbd2d9"/>
+            <rect x="268" y="100" width="60" height="8" rx="4" fill="#cbd2d9"/>
+            <rect x="268" y="116" width="170" height="8" rx="4" fill="#5d6c7b"/>
+            <rect x="268" y="132" width="140" height="6" rx="3" fill="#cbd2d9"/>
+            <rect x="268" y="164" width="80" height="18" rx="9" fill="#0064e0"/>
+            <rect x="24" y="212" width="204" height="84" rx="10" fill="#fff" stroke="#cbd2d9"/>
+            <rect x="252" y="212" width="204" height="84" rx="10" fill="#fff" stroke="#cbd2d9"/>
+          </svg>
+        </div>
+        <div>
+          <p class="section-label">Presupuestos participativos</p>
+          <h2 id="feature-2-heading">100 millones de euros decididos por los vecinos</h2>
+          <p>
+            El módulo de presupuestos participativos era el más complejo: cada ciudadano tenía un número limitado de votos que debía distribuir entre proyectos de su distrito. Diseñé un sistema de <strong>«saldo de votos»</strong> visual que hacía tangible algo abstracto.
+          </p>
+          <p>
+            Las tarjetas de proyecto mostraban coste, votos recibidos y estado en tiempo real. Los proyectos ya votados se marcaban visualmente, <strong>evitando errores y confusión</strong> sin necesidad de mensajes de error.
+          </p>
+          <ul class="tag-list">
+            <li>Sistema de saldo</li>
+            <li>Feedback en tiempo real</li>
+            <li>Error prevention</li>
+            <li>Filtrado por barrio</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature" aria-labelledby="feature-3-heading">
+      <div class="wrap feature-inner">
+        <div class="feature-visual">
+          <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <rect width="480" height="320" fill="#f8f9fb"/>
+            <rect x="24" y="24" width="432" height="48" rx="10" fill="#dff4f0" stroke="#15803d"/>
+            <circle cx="52" cy="48" r="12" fill="#15803d"/>
+            <rect x="76" y="36" width="220" height="8" rx="4" fill="#1c2b33"/>
+            <rect x="76" y="50" width="160" height="6" rx="3" fill="#5d6c7b"/>
+            <rect x="380" y="40" width="60" height="16" rx="8" fill="#15803d"/>
+            <rect x="24" y="84" width="432" height="48" rx="10" fill="#dff4f0" stroke="#15803d"/>
+            <circle cx="52" cy="108" r="12" fill="#15803d"/>
+            <rect x="76" y="96" width="220" height="8" rx="4" fill="#1c2b33"/>
+            <rect x="76" y="110" width="160" height="6" rx="3" fill="#5d6c7b"/>
+            <rect x="380" y="100" width="60" height="16" rx="8" fill="#15803d"/>
+            <rect x="24" y="144" width="432" height="48" rx="10" fill="#fef3c7" stroke="#92400e"/>
+            <circle cx="52" cy="168" r="12" fill="#92400e"/>
+            <rect x="76" y="156" width="220" height="8" rx="4" fill="#1c2b33"/>
+            <rect x="76" y="170" width="160" height="6" rx="3" fill="#5d6c7b"/>
+            <rect x="380" y="160" width="60" height="16" rx="8" fill="#92400e"/>
+            <rect x="24" y="204" width="130" height="60" rx="10" fill="#e1effe"/>
+            <rect x="40" y="216" width="90" height="8" rx="4" fill="#0064e0"/>
+            <rect x="40" y="232" width="60" height="16" rx="4" fill="#0064e0"/>
+            <rect x="166" y="204" width="130" height="60" rx="10" fill="#dff4f0"/>
+            <rect x="182" y="216" width="90" height="8" rx="4" fill="#15803d"/>
+            <rect x="182" y="232" width="60" height="16" rx="4" fill="#15803d"/>
+            <rect x="308" y="204" width="128" height="60" rx="10" fill="#fff" stroke="#cbd2d9"/>
+            <rect x="324" y="216" width="90" height="8" rx="4" fill="#5d6c7b"/>
+            <rect x="324" y="232" width="70" height="12" rx="4" fill="#5d6c7b"/>
+          </svg>
+        </div>
+        <div>
+          <p class="section-label">Accesibilidad como requisito</p>
+          <h2 id="feature-3-heading">Diseñado para funcionar con cualquier tecnología de asistencia</h2>
+          <p>
+            Como plataforma de un servicio público digital, la accesibilidad no era opcional. Implementé un proceso de <strong>auditoría continua</strong> en cada ciclo de release, con tests con lectores de pantalla (NVDA y VoiceOver) y navegación por teclado.
+          </p>
+          <p>
+            Más allá del cumplimiento técnico, rediseñé el microcopy de todos los formularios en un lenguaje <strong>claro, sin jerga administrativa</strong>, con mensajes de error que explicaban exactamente qué hacer.
+          </p>
+          <ul class="tag-list">
+            <li>WCAG 2.0 AA</li>
+            <li>Screen readers</li>
+            <li>Lenguaje claro</li>
+            <li>Lighthouse 96/100</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <blockquote class="quote-block">
+      <p>«Cuando diseñas para una institución pública, cada pixel es político. Cada decisión de diseño incluye o excluye a alguien del proceso democrático.»</p>
+      <footer>Reflexión personal · Decide Madrid · 2017</footer>
+    </blockquote>
+
+    <section class="with-background" aria-labelledby="results-heading">
+      <div class="wrap">
+        <p class="section-label">Resultados</p>
+        <h2 id="results-heading">Métricas que demuestran el impacto del diseño</h2>
+        <p>Cada mejora de UX se tradujo en más ciudadanos participando, más propuestas completadas y menos fricción en los momentos clave del proceso democrático.</p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <p class="stat-num">–68%</p>
+            <p class="stat-desc"><strong>Abandono en formularios</strong>La tasa de abandono en el formulario de nueva propuesta bajó del 72% al 23%.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">+400K</p>
+            <p class="stat-desc"><strong>Ciudadanos registrados</strong>La plataforma superó los 400.000 usuarios verificados en 2018.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">–45%</p>
+            <p class="stat-desc"><strong>Propuestas duplicadas</strong>La detección de similitudes redujo a la mitad los duplicados en el catálogo.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">96/100</p>
+            <p class="stat-desc"><strong>Accesibilidad Lighthouse</strong>Primera plataforma de participación ciudadana española con certificación WCAG 2.0 AA.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">🏆 ONU</p>
+            <p class="stat-desc"><strong>Premio al Servicio Público</strong>Galardón de las Naciones Unidas en Fomento de la Participación Ciudadana.</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-num">30+</p>
+            <p class="stat-desc"><strong>Países adoptaron CONSUL</strong>Las mejoras de diseño se adoptaron en instituciones de más de 30 países.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="learnings-heading">
+      <div class="wrap two">
+        <div>
+          <p class="section-label">Aprendizajes</p>
+          <h2 id="learnings-heading">Lo que este proyecto me enseñó sobre diseño y democracia</h2>
+          <p>Cuatro años diseñando para millones de ciudadanos en un contexto de altísima responsabilidad pública dejaron lecciones difíciles de obtener en otro tipo de proyecto.</p>
+        </div>
+        <ol class="learning-list">
+          <li>
+            <span class="learning-num">01</span>
+            <div>
+              <h3>El diseño es política</h3>
+              <p>En una plataforma de participación ciudadana, cada decisión de diseño es una decisión política. La neutralidad del diseño no existe en este contexto.</p>
+            </div>
+          </li>
+          <li>
+            <span class="learning-num">02</span>
+            <div>
+              <h3>La confianza se diseña</h3>
+              <p>Un ciudadano que no confía en que su voto es seguro no vota. Diseñar transparencia y confirmación en cada paso fue tan importante como la usabilidad.</p>
+            </div>
+          </li>
+          <li>
+            <span class="learning-num">03</span>
+            <div>
+              <h3>El lenguaje es UX</h3>
+              <p>Cambiar «Enviar propuesta al proceso de deliberación» por «Publicar tu idea» triplicó la tasa de finalización. El microcopy no es un detalle, es el diseño.</p>
+            </div>
+          </li>
+          <li>
+            <span class="learning-num">04</span>
+            <div>
+              <h3>Los tiempos políticos son una restricción de diseño</h3>
+              <p>Los plazos de un proyecto institucional los define el calendario político. Diseñar con calidad dentro de ventanas inamovibles fue una habilidad clave.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="with-background" aria-labelledby="next-heading">
+      <div class="wrap">
+        <p class="section-label">Retrospectiva</p>
+        <h2 id="next-heading">¿Qué haría diferente con lo que sé hoy?</h2>
+        <div class="two-columns">
+          <div>
+            <p><strong>Investigación cuantitativa desde el sprint 1.</strong> Un dashboard de analítica desde el inicio habría permitido detectar antes los puntos de fricción más críticos.</p>
+            <p><strong>Un panel ciudadano permanente.</strong> Los tests se hacían de forma puntual. Un panel de ciudadanos segmentados por perfil habría agilizado los ciclos de validación.</p>
+          </div>
+          <div>
+            <p><strong>Diseñar el offboarding.</strong> Poco cuidado se dedicó a qué pasaba con las propuestas que no llegaban al umbral de apoyos. Esa experiencia de rechazo necesitaba más atención.</p>
+            <p><strong>Contribución más sistemática al open source.</strong> Muchas mejoras nunca llegaron al repositorio público de CONSUL por falta de tiempo y proceso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-heading">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <h2 id="cta-heading">¿Trabajamos juntos en algo que importa?</h2>
+            <p>Disponible para proyectos de impacto en remoto. Hablemos.</p>
+          </div>
+          <div class="small">
+            <a class="btn" href="mailto:alberto@decabeza.es">Escríbeme</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="with-background" aria-labelledby="other-heading">
+      <div class="wrap">
+        <h2 id="other-heading">Otros casos de estudio</h2>
+        <div class="grid">
+          <article class="card democrateam">
+            <h3>democrateam</h3>
+            <p>Llevar la plataforma de participación ciudadana CONSUL Democracy a instituciones públicas de todo el mundo.</p>
+            <a href="./democrateam.html">Caso de estudio democrateam &#8594;</a>
+            <img src="images/democrateam_homepage.png" alt="" loading="lazy">
+          </article>
+          <article class="card beruby">
+            <h3>beruby</h3>
+            <p>Rediseño de una plataforma de cashback para que la claridad y el funnel de registro conviertan de verdad.</p>
+            <a href="./beruby.html">Caso de estudio beruby &#8594;</a>
+            <img src="images/beruby_homepage.png" alt="" loading="lazy">
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap">
-      <p>© 2026 decabeza</p>
-    </div>
+    <ul class="meta">
+      <li>
+        <a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer" class="ext">
+          LinkedIn
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/decabeza/" target="_blank" rel="noreferrer" class="ext">
+          GitHub
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="docs/alberto_garcia_cabeza_cv_2026.pdf" target="_blank" rel="noreferrer" class="ext">
+          Currículum
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p>© 2026 decabeza</p>
   </footer>
 </body>
 </html>

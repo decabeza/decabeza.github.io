@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>decabeza | Product Designer - Portfolio</title>
-  <meta name="description" content="Portfolio de Alberto, diseñador de productos minimalista.">
+  <meta name="description" content="Portfolio de Alberto, diseñador de producto UX/UI con más de 20 años de experiencia en civic tech y productos digitales.">
   <link rel="stylesheet" href="./stylesheets/styles.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,12 +26,16 @@
       <nav class="nav" aria-label="Navegación principal">
         <a href="#projects">Casos de estudio</a>
         <a href="about.html">Sobre mí</a>
-        <a href="mailto:alberto@decabeza.es">Contacto</a>
+        <a href="mailto:alberto@decabeza.es">Contacto
+          <svg width="14" height="14" viewBox="0 0 24 14" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </nav>
 
       <div class="lang">
-        <a href="#" class="active">Español</a>
-        <span>/</span>
+        <a href="#" class="active" aria-current="true">Español</a>
+        <span aria-hidden="true">/</span>
         <a href="en/index.html">English</a>
       </div>
     </div>
@@ -40,14 +44,14 @@
   <main id="contenido" class="main">
     <section class="hero homepage">
       <div class="wrap">
-        <h1>Soy Alberto, <br><span class="gradient-text">diseñador de producto UX & UI.</span></h1>
+        <h1>Soy Alberto, <br><span class="gradient-text">diseñador de producto UX &amp; UI.</span></h1>
         <h2>Diseño productos digitales de principio a fin: investigación, estrategia, interfaz y entrega.<br> Me incorporo a equipos que necesitan a alguien que cubra todo el ciclo de diseño.</h2>
       </div>
     </section>
 
-    <div class="section">
+    <section class="section" aria-labelledby="how-heading">
       <div class="wrap">
-        <h2>Cómo trabajo</h2>
+        <h2 id="how-heading">Cómo trabajo</h2>
         <div class="two-columns">
           <div class="facts">
             <div class="fact">
@@ -75,14 +79,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section with-background logos">
+    <section class="section with-background logos" aria-labelledby="logos-heading">
       <div class="wrap">
-        <h2>Empresas y productos en los que he contribuido</h2>
+        <h2 id="logos-heading">Empresas y productos en los que he contribuido</h2>
 
         <div class="logos-wrapper">
-          <div class="logos-track">
+          <div class="logos-track" aria-hidden="true">
             <img src="./images/logo_teowaki.png" alt="Teowaki">
             <img src="./images/logo_zaragoza.png" alt="Ayuntamiento de Zaragoza">
             <img src="./images/logo_grole.png" alt="GRole">
@@ -91,21 +95,21 @@
             <img src="./images/logo_ss.png" alt="Festival de Cine de San Sebastián">
             <img src="./images/logo_ied.png" alt="IED Madrid">
 
-            <img src="./images/logo_teowaki.png" alt="Teowaki">
-            <img src="./images/logo_zaragoza.png" alt="Ayuntamiento de Zaragoza">
-            <img src="./images/logo_grole.png" alt="GRole">
-            <img src="./images/logo_hola.png" alt="¡Hola!">
-            <img src="./images/logo_qoolife.png" alt="Qoolife">
-            <img src="./images/logo_ss.png" alt="Festival de Cine de San Sebastián">
-            <img src="./images/logo_ied.png" alt="IED Madrid">
+            <img src="./images/logo_teowaki.png" alt="">
+            <img src="./images/logo_zaragoza.png" alt="">
+            <img src="./images/logo_grole.png" alt="">
+            <img src="./images/logo_hola.png" alt="">
+            <img src="./images/logo_qoolife.png" alt="">
+            <img src="./images/logo_ss.png" alt="">
+            <img src="./images/logo_ied.png" alt="">
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section projects" id="projects">
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
       <div class="wrap">
-        <h2>Casos de estudio</h2>
+        <h2 id="projects-heading">Casos de estudio</h2>
         <div class="grid">
           <article class="card democrateam">
             <h3>democrateam</h3>
@@ -136,48 +140,33 @@
           </article>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="footer">
     <ul class="meta">
       <li>
         <a href="https://www.linkedin.com/in/decabeza/" target="_blank" rel="noreferrer" class="ext">
-        LinkedIn
-        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 17L17 7M17 7H9M17 7V15"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
+          LinkedIn
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
       </li>
       <li>
         <a href="https://github.com/decabeza/" target="_blank" rel="noreferrer" class="ext">
           GitHub
-        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 17L17 7M17 7H9M17 7V15"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
       </li>
       <li>
         <a href="docs/alberto_garcia_cabeza_cv_2026.pdf" target="_blank" rel="noreferrer" class="ext">
           Currículum
-        <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7 17L17 7M17 7H9M17 7V15"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M17 7H9M17 7V15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
       </li>
     </ul>
